@@ -1,0 +1,15 @@
+{
+    "name": "hgv/mss-php",
+    "description": "MSS API wrapper for PHP projects",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Mair Spiess",
+            "email": "david.spiess@hgv.it"
+        }
+    ],
+    "require": {
+        "jms/serializer": "^1.1",
+        "guzzlehttp/guzzle": "^6.2"
+    }
+}
