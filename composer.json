@@ -1,6 +1,7 @@
 {
     "name": "hgv/mss-php",
     "description": "MSS API wrapper for PHP projects",
+    "homepage" : "https://github.com/HGV/mss-php",
     "license": "MIT",
     "authors": [
         {
@@ -11,5 +12,10 @@
     "require": {
         "jms/serializer": "^1.1",
         "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MssPhp\\": "src/"
+        }
     }
 }
