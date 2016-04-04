@@ -11,7 +11,8 @@
     ],
     "require": {
         "jms/serializer": "^1.1",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "glynnforrest/crutches": "^0.3.2"
     },
     "autoload": {
         "psr-4": {
