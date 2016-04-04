@@ -28,6 +28,7 @@ $res = $client->request(function($req) {
 });
 
 $hotel = $res->result->hotel[0];
-echo $hotel->name; // => Hotel Lichtenstern
-echo $hotel->online_payment->bank->iban; // => IT28K0818758740000001021022
+var_dump($hotel->name); // => string(18) "Hotel Lichtenstern"
+var_dump($hotel->stars); // => float(3)
+var_dump($hotel->online_payment->bank->iban); // => string(27) "IT28K0818758740000001021022"
 ```
