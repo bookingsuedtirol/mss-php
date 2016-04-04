@@ -9,16 +9,16 @@ class SearchLts {
     /**
      * @Type("integer")
      */
-    public $A0Ene = 0;
+    public $A0Ene;
 
     /**
      * @Type("integer")
      */
-    public $A0MTV = 0;
+    public $A0MTV;
 
     /**
      * @Type("integer")
      */
-    public $A0Rep = 0;
+    public $A0Rep;
 
 }
