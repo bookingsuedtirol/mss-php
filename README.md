@@ -1,6 +1,9 @@
 # mss-php
 MSS API wrapper for PHP projects
 
+## Available services
+- [x] getHotelList
+
 ## Example
 ```php
 require __DIR__ . '/vendor/autoload.php';
