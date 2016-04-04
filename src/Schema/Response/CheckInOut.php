@@ -6,12 +6,12 @@ use JMS\Serializer\Annotation\Type;
 
 class CheckInOut {
     /**
-     * @Type("DateTime<'hh:mm'>")
+     * @Type("string")
      */
     public $from;
 
     /**
-     * @Type("DateTime<'hh:mm'>")
+     * @Type("string")
      */
     public $to;
 }
