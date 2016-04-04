@@ -7,7 +7,7 @@ use JMS\Serializer\Annotation\XmlList;
 
 class Result {
     /**
-     * @Type("MssPhp\Schema\Response\Hotel")
+     * @Type("array<MssPhp\Schema\Response\Hotel>")
      * @XmlList(inline = true, entry = "hotel")
      */
     public $hotel;

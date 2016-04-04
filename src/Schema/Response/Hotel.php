@@ -4,7 +4,7 @@ namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
 
-class Header {
+class Hotel {
     /**
      * @Type("string")
      */
