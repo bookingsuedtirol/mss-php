@@ -47,7 +47,6 @@ class Client
         $rawRes = $this->config['client']->post(null, ['body' => $xmlReq]);
         $xmlRes = $rawRes->getBody();
         $res = $this->serializer->deserialize($xmlRes, Response\Root::class, 'xml');
-        var_dump($res); die();
         return $res;
     }
 
