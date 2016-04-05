@@ -12,7 +12,8 @@ class SearchLocation {
     public $location;
 
     /**
-     * @Type("string")
+    * @Type("array<string>")
+    * @XmlList(inline = true, entry="location_lts")
      */
     public $location_lts;
 }

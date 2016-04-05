@@ -16,6 +16,11 @@ class Options {
     public $offer_details;
 
     /**
+     * @Type("integer")
+     */
+    public $special_details;
+
+    /**
      * @Type("DateTime<'Y-m-d'>")
      */
     public $picture_date;

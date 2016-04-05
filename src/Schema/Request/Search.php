@@ -41,4 +41,15 @@ class Search {
      * @Type("MssPhp\Schema\Request\SearchLts")
      */
     public $search_lts;
+
+    /**
+     * @Type("MssPhp\Schema\Request\SearchSpecial")
+     */
+    public $search_special;
+
+    /**
+     * @Type("array<string>")
+     * @XmlList(inline = true, entry="in")
+     */
+    public $in;
 }

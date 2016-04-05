@@ -8,10 +8,10 @@ class Order {
     /**
      * @Type("string")
      */
-    public $field = 'name';
+    public $field;
 
     /**
      * @Type("string")
      */
-    public $dir = 'asc';
+    public $dir;
 }
