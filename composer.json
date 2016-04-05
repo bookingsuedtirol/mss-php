@@ -1,7 +1,9 @@
 {
     "name": "hgv/mss-php",
+    "type": "library",
     "description": "MSS API wrapper for PHP projects",
     "homepage" : "https://github.com/HGV/mss-php",
+    "keywords": ["mss","api","wrapper"],
     "license": "MIT",
     "authors": [
         {
@@ -10,6 +12,7 @@
         }
     ],
     "require": {
+        "php": ">=5.6.0",
         "jms/serializer": "^1.1",
         "guzzlehttp/guzzle": "^6.2",
         "glynnforrest/crutches": "^0.3.2"
