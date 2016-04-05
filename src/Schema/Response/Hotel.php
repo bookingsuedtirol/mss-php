@@ -46,6 +46,11 @@ class Hotel {
     public $themes;
 
     /**
+     * @Type("integer")
+     */
+    public $features;
+
+    /**
      * @Type("MssPhp\Schema\Response\Location")
      */
     public $location;

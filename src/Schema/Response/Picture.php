@@ -14,4 +14,9 @@ class Picture {
      * @Type("integer")
      */
     public $time;
+
+    /**
+     * @Type("string")
+     */
+    public $title;
 }

@@ -27,6 +27,11 @@ class Price {
     public $title;
 
     /**
+     * @Type("string")
+     */
+    public $description;
+
+    /**
      * @Type("double")
      */
     public $price_ws;

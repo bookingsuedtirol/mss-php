@@ -11,4 +11,10 @@ class Result {
      * @XmlList(inline = true, entry = "hotel")
      */
     public $hotel;
+
+    /**
+     * @Type("array<MssPhp\Schema\Response\Special>")
+     * @XmlList(inline = true, entry = "special")
+     */
+    public $special;
 }

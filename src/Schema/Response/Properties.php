@@ -33,6 +33,11 @@ class Properties {
     /**
      * @Type("integer")
      */
+    public $wc_rooms;
+
+    /**
+     * @Type("integer")
+     */
     public $min;
 
     /**

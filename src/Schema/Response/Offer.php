@@ -28,7 +28,7 @@ class Offer {
     /**
      * @Type("string")
      */
-    public $offer_title;
+    public $title;
 
     /**
      * @Type("string")
