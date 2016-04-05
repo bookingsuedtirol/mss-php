@@ -77,7 +77,7 @@ class Client
             'password' => getenv('MSS_PASSWORD'),
             'source' => getenv('MSS_SOURCE'),
             'client' => $client,
-            'request' => $req,
+            'request' => $req
         ];
 
         $config = $userConfig + $defaults;
