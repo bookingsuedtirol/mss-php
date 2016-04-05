@@ -11,7 +11,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 use Crutches\Bitmask;
 use MssPhp\Client;
-use MssPhp\Bitmask\Hotel as HOT;
+use MssPhp\Bitmask\HotelDetails;
 
 $client = new Client([
     'user' => 'username',
@@ -23,8 +23,8 @@ $res = $client->request(function($req) {
     $req->header->method = 'getHotelList';
     $req->request->search->id[] = '11230';
     $req->request->options->hotel_details = (new Bitmask(
-        HOT::BASE_DATA|
-        HOT::ONLINE_PAYMENT
+        HotelDetails::BASIC_INFO|
+        HotelDetails::PAYMENT_OPTIONS_FOR_ONLINE_BOOKING
     ))->getBitmask();
 });
 
