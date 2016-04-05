@@ -3,6 +3,7 @@
 namespace MssPhp\Schema\Request;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\XmlList;
 
 class SearchOffer {
     /**
@@ -31,8 +32,9 @@ class SearchOffer {
     public $channel_id;
 
     /**
-     * @Type("MssPhp\Schema\Request\Room")
-     */
+     * @Type("array<MssPhp\Schema\Request\Room>")
+     * @XmlList(inline = true, entry = "room")
+    */
     public $room;
 
     /**
