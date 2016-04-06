@@ -7,8 +7,8 @@ use JMS\Serializer\Annotation\XmlList;
 
 class Services {
     /**
-    * @Type("array<MssPhp\Schema\Response\Service>")
-    * @XmlList(inline = true, entry = "service")
+     * @Type("array<MssPhp\Schema\Response\Service>")
+     * @XmlList(inline = true, entry = "service")
      */
     public $service;
 }

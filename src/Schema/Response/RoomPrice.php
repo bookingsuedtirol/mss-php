@@ -3,12 +3,35 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
-use JMS\Serializer\Annotation\XmlList;
 
 class RoomPrice {
     /**
-     * @Type("array<MssPhp\Schema\Response\Price>")
-     * @XmlList(inline = true, entry="price")
+     * @Type("string")
      */
-    public $price;
+    public $room_id;
+
+    /**
+     * @Type("integer")
+     */
+    public $room_seq;
+
+    /**
+     * @Type("string")
+     */
+    public $offer_id;
+
+    /**
+    * @Type("MssPhp\Schema\Response\PriceDetails")
+    */
+    public $price_details;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Price")
+     */
+    public $price_total;
+
+    /**
+    * @Type("MssPhp\Schema\Response\Price")
+     */
+    public $price_inclusive;
 }

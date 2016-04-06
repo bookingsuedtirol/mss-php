@@ -16,7 +16,7 @@ class Channel {
     public $offer_description;
 
     /**
-     * @Type("MssPhp\Schema\Response\RoomPrice")
+     * @Type("MssPhp\Schema\Response\RoomPrices")
      */
     public $room_price;
 

@@ -3,11 +3,10 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
-use JMS\Serializer\Annotation\XmlList;
 
-class PriceDetails {
+class RoomPrices {
     /**
-     * @Type("array<MssPhp\Schema\Response\Price>")
+     * @Type("array<MssPhp\Schema\Response\RoomPrice>")
      * @XmlList(inline = true, entry = "price")
      */
     public $price;
