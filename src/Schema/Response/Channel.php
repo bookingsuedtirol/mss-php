@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\Type;
 
 class Channel {
     /**
-     * @Type("integer")
+     * @Type("string")
      */
     public $channel_id;
 
