@@ -28,10 +28,10 @@ $res = $client->request(function($req) {
     ))->getBitmask();
 });
 
-$hotel = $res->result->hotel[0];
-var_dump($hotel->name); // => string(18) "Hotel Lichtenstern"
-var_dump($hotel->stars); // => float(3)
-var_dump($hotel->online_payment->bank->iban); // => string(27) "IT28K0818758740000001021022"
+$hotel = $res['result']['hotel'][0];
+var_dump($hotel['name']); // => string(18) "Hotel Lichtenstern"
+var_dump($hotel['stars']); // => float(3)
+var_dump($hotel['online_payment']['bank']['iban']); // => string(27) "IT28K0818758740000001021022"
 ```
 
 ## More complex example
@@ -57,8 +57,8 @@ $res = $client->request(function($req) {
     $offer->room[0]->person[] = 18;
 });
 
-$offer = $res->result->hotel[0]->channel->offer_description->offer[0];
+$offer = $res['result']['hotel'][0]['channel']['offer_description']['offer'][0];
 
-var_dump($offer->offer_id); // => string(5) "40444"
-var_dump($offer->title); // => string(11) "Tagespreise"
+var_dump($offer['offer_id']); // => string(5) "40444"
+var_dump($offer['title']); // => string(11) "Tagespreise"
 ```
