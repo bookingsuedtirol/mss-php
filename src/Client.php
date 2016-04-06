@@ -27,10 +27,14 @@ class Client
      */
     public function __construct(array $config = [])
     {
-        $this->serializer = \JMS\Serializer\SerializerBuilder::create()
-            ->setCacheDir(__DIR__ . '/Cache')
-            ->build();
         $this->config = $this->configureDefaults($config);
+        $serializer = \JMS\Serializer\SerializerBuilder::create();
+
+        if ($this->config['cache'] == true) {
+            $serializer->setCacheDir(__DIR__ . '/Cache');
+        }
+        
+        $this->serializer = $serializer->build();
     }
 
     /**
@@ -80,7 +84,8 @@ class Client
             'password' => getenv('MSS_PASSWORD'),
             'source' => getenv('MSS_SOURCE'),
             'client' => $client,
-            'request' => $req
+            'request' => $req,
+            'cache' => false
         ];
 
         $config = $userConfig + $defaults;
