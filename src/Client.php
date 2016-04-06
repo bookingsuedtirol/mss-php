@@ -11,7 +11,7 @@ class Client
     /**
      * @var JMS\Serializer
      */
-    private $serializer;
+    public $serializer;
 
     /**
      *  Default request options
