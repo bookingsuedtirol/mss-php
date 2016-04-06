@@ -3,12 +3,23 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\XmlList;
 
 class Room {
     /**
      * @Type("string")
      */
     public $room_id;
+
+    /**
+     * @Type("string")
+     */
+    public $room_lts_id;
+
+    /**
+     * @Type("string")
+     */
+    public $room_code;
 
     /**
      * @Type("integer")
@@ -49,4 +60,15 @@ class Room {
      * @Type("MssPhp\Schema\Response\Properties")
      */
     public $properties;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Occupancy")
+     */
+    public $occupancy;
+
+    /**
+     * @Type("MssPhp\Schema\Response\RoomNumbers")
+     * @XmlList(inline = true, entry = "room_numbers")
+     */
+    public $room_numbers;
 }

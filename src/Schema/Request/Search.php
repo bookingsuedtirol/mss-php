@@ -52,4 +52,9 @@ class Search {
      * @XmlList(inline = true, entry="in")
      */
     public $in;
+
+    /**
+     * @Type("string")
+     */
+    public $id_ofchannel;
 }

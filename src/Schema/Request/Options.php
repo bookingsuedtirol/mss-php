@@ -18,6 +18,11 @@ class Options {
     /**
      * @Type("integer")
      */
+    public $room_details;
+
+    /**
+     * @Type("integer")
+     */
     public $special_details;
 
     /**
