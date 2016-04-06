@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\Type;
 
 class PriceDetails {
     /**
-     * @Type("MssPhp\Schema\Response\PriceDetails")
+     * @Type("MssPhp\Schema\Response\Price")
      */
     public $price;
 }
