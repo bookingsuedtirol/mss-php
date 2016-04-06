@@ -27,7 +27,8 @@ class SearchOffer {
     public $feature;
 
     /**
-     * @Type("string")
+     * @Type("array<string>")
+     * @XmlList(inline = true, entry="channel_id")
      */
     public $channel_id;
 
