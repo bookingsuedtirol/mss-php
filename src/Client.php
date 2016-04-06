@@ -1,10 +1,10 @@
 <?php
 namespace MssPhp;
 
+\Doctrine\Common\Annotations\AnnotationRegistry::registerLoader('class_exists');
+
 use MssPhp\Schema\Request;
 use MssPhp\Schema\Response;
-
-\Doctrine\Common\Annotations\AnnotationRegistry::registerLoader('class_exists');
 
 class Client
 {
