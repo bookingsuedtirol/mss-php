@@ -50,7 +50,7 @@ class Client
         $rawRes = $this->config['client']->post(null, ['body' => $xmlReq]);
         $xmlRes = $rawRes->getBody();
         $res = $this->serializer->deserialize($xmlRes, $type, 'xml');
-        return $res;
+        return json_decode($this->serializer->serialize($res, 'json'), true);
     }
 
     /**
