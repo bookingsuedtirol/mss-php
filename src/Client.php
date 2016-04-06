@@ -37,10 +37,11 @@ class Client
      * Makes a request to the MSS Endpoint
      *
      * @param callback $setup to modify request
+     * @param string $type deserialization root class
      *
      * @return MssPhp\Schema\Response\Root
      */
-    public function request($setup)
+    public function request($setup, $type = Response\Root::class)
     {
         $req = clone($this->config['request']);
         $setup($req);
@@ -48,7 +49,7 @@ class Client
         $xmlReq = $this->serializer->serialize($req, 'xml');
         $rawRes = $this->config['client']->post(null, ['body' => $xmlReq]);
         $xmlRes = $rawRes->getBody();
-        $res = $this->serializer->deserialize($xmlRes, Response\Root::class, 'xml');
+        $res = $this->serializer->deserialize($xmlRes, $type, 'xml');
         return $res;
     }
 
