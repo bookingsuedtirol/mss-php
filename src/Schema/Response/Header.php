@@ -16,6 +16,11 @@ class Header {
     public $result_id;
 
     /**
+     * @Type("string")
+     */
+    public $source;
+
+    /**
      * @Type("MssPhp\Schema\Response\Paging")
      */
     public $paging;
