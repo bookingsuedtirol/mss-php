@@ -27,7 +27,9 @@ class Client
      */
     public function __construct(array $config = [])
     {
-        $this->serializer = \JMS\Serializer\SerializerBuilder::create()->build();
+        $this->serializer = \JMS\Serializer\SerializerBuilder::create()
+            ->setCacheDir(__DIR__ . '/Cache')
+            ->build();
         $this->config = $this->configureDefaults($config);
     }
 
