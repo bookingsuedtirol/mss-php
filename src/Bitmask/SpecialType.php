@@ -1,7 +1,7 @@
 <?php
 namespace MssPhp\Bitmask;
 
-class SpecialTypeOptions
+class SpecialType
 {
     const PACKAGES = 1;
     const SPECIALS = 2;
