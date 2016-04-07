@@ -29,4 +29,9 @@ class Channel {
      * @Type("MssPhp\Schema\Response\ServicePrice")
      */
     public $service_price;
+
+    /**
+     * @Type("integer")
+     */
+    public $from_price;
 }

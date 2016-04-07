@@ -13,12 +13,22 @@ class Special {
     /**
      * @Type("integer")
      */
-    public $valid;
+    public $status;
 
     /**
      * @Type("integer")
      */
     public $offer_typ;
+
+    /**
+     * @Type("integer")
+     */
+    public $special_typ;
+
+    /**
+     * @Type("integer")
+     */
+    public $special_premium;
 
     /**
      * @Type("integer")
@@ -59,6 +69,16 @@ class Special {
      * @Type("integer")
      */
     public $children_max;
+
+    /**
+     * @Type("integer")
+     */
+    public $adults_min;
+
+    /**
+     * @Type("integer")
+     */
+    public $adults_max;
 
     /**
      * @Type("DateTime<'Y-m-d'>")
