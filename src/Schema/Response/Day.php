@@ -11,6 +11,11 @@ class Day {
     public $date;
 
     /**
+     * @Type("integer")
+     */
+    public $free;
+
+    /**
      * @Type("MssPhp\Schema\Response\Restrictions")
      */
     public $restrictions;
