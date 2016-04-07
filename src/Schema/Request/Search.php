@@ -48,6 +48,11 @@ class Search {
     public $search_special;
 
     /**
+     * @Type("MssPhp\Schema\Request\SearchAvailability")
+     */
+    public $search_availability;
+
+    /**
      * @Type("array<string>")
      * @XmlList(inline = true, entry="in")
      */

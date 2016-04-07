@@ -5,6 +5,7 @@ MSS API wrapper for PHP projects
 - [x] getHotelList
 - [x] getSpecialList
 - [x] getRoomList
+- [x] getRoomAvailability
 
 ## Example
 ```php

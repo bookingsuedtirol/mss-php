@@ -17,14 +17,14 @@ class Room {
     public $room_lts_id;
 
     /**
-     * @Type("string")
-     */
-    public $room_code;
-
-    /**
      * @Type("integer")
      */
     public $room_type;
+
+    /**
+     * @Type("string")
+     */
+    public $room_code;
 
     /**
      * @Type("integer")
@@ -71,4 +71,14 @@ class Room {
      * @XmlList(inline = true, entry = "room_numbers")
      */
     public $room_numbers;
+
+    /**
+     * @Type("MssPhp\Schema\Response\RoomDetails")
+     */
+    public $room_details;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Days")
+     */
+    public $days;
 }

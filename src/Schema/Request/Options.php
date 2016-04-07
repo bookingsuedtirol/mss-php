@@ -34,4 +34,19 @@ class Options {
      * @Type("integer")
      */
     public $lts_bookable;
+
+    /**
+     * @Type("integer")
+     */
+    public $get_availability;
+
+    /**
+     * @Type("integer")
+     */
+    public $get_restrictions;
+
+    /**
+     * @Type("integer")
+     */
+    public $get_roomdetails;
 }
