@@ -8,5 +8,5 @@ class Service {
     /**
      * @Type("integer")
      */
-    public $board;
+    public $service;
 }
