@@ -18,6 +18,11 @@ class Special {
     /**
      * @Type("integer")
      */
+    public $valid;
+
+    /**
+     * @Type("integer")
+     */
     public $offer_typ;
 
     /**
@@ -101,9 +106,19 @@ class Special {
     public $description;
 
     /**
+     * @Type("MssPhp\Schema\Response\Hotels")
+     */
+    public $hotels;
+
+    /**
      * @Type("MssPhp\Schema\Response\Seasons")
      */
     public $seasons;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Services")
+     */
+    public $services;
 
     /**
      * @Type("MssPhp\Schema\Response\Inclusive")
@@ -119,9 +134,4 @@ class Special {
      * @Type("MssPhp\Schema\Response\Themes")
      */
     public $themes;
-
-    /**
-     * @Type("MssPhp\Schema\Response\Hotels")
-     */
-    public $hotels;
 }
