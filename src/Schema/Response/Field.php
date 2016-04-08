@@ -4,14 +4,14 @@ namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
 
-class Form {
+class Field {
     /**
      * @Type("string")
      */
-    public $form_url;
+    public $name;
 
     /**
-     * @Type("MssPhp\Schema\Response\FormFields")
+     * @Type("string")
      */
-    public $form_fields;
+    public $value;
 }
