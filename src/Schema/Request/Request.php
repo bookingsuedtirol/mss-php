@@ -21,6 +21,11 @@ class Request {
     public $order;
 
     /**
+     * @Type("MssPhp\Schema\Request\Data")
+     */
+    public $data;
+
+    /**
      * @Type("MssPhp\Schema\Request\Logging")
      */
     public $logging;

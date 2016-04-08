@@ -12,6 +12,16 @@ class Search {
     public $lang = 'de';
 
     /**
+     * @Type("string")
+     */
+    public $remote_ip;
+
+    /**
+     * @Type("string")
+     */
+    public $result_id;
+
+    /**
      * @Type("array<string>")
      * @XmlList(inline = true, entry="id")
      */

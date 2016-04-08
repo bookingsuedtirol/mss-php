@@ -7,6 +7,21 @@ use JMS\Serializer\Annotation\XmlList;
 
 class Room {
     /**
+     * @Type("string")
+     */
+    public $room_id;
+
+    /**
+     * @Type("integer")
+     */
+    public $room_type;
+
+    /**
+     * @Type("string")
+     */
+    public $offer_id;
+
+    /**
      * @Type("integer")
      */
     public $room_seq;
