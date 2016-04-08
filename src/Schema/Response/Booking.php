@@ -17,7 +17,7 @@ class Booking {
     public $storno_id;
 
     /**
-     * @Type("DateTime")
+     * @Type("DateTime<'Y-m-d H:i:s'>")
      */
     public $booking_date;
 
