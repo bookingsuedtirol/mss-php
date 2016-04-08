@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\Type;
 
 class Price {
     /**
-     * @Type("string")
+     * @Type("integer")
      */
     public $price_id;
 
@@ -16,11 +16,6 @@ class Price {
     public $price_typ;
 
     /**
-     * @Type("integer")
-     */
-    public $supplement;
-
-    /**
      * @Type("string")
      */
     public $title;
@@ -28,7 +23,27 @@ class Price {
     /**
      * @Type("string")
      */
+    public $price_title;
+
+    /**
+     * @Type("string")
+     */
     public $description;
+
+    /**
+     * @Type("string")
+     */
+    public $price_description;
+
+    /**
+     * @Type("integer")
+     */
+    public $supplement;
+
+    /**
+    * @Type("integer")
+    */
+    public $price_supplement;
 
     /**
      * @Type("double")
@@ -54,6 +69,21 @@ class Price {
      * @Type("double")
      */
     public $price_ai;
+
+    /**
+     * @Type("double")
+     */
+    public $price_amount;
+
+    /**
+     * @Type("double")
+     */
+    public $price_value;
+
+    /**
+     * @Type("double")
+     */
+    public $price_total;
 
     /**
      * @Type("integer")

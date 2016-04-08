@@ -27,6 +27,26 @@ class Room {
     public $room_code;
 
     /**
+     * @Type("string")
+     */
+    public $room_title;
+
+    /**
+     * @Type("string")
+     */
+    public $room_description;
+
+    /**
+     * @Type("string")
+     */
+    public $title;
+
+    /**
+     * @Type("string")
+     */
+    public $description;
+
+    /**
      * @Type("integer")
      */
     public $room_free;
@@ -42,19 +62,20 @@ class Room {
     public $features_view;
 
     /**
-     * @Type("string")
+     * @Type("double")
      */
-    public $title;
-
-    /**
-     * @Type("string")
-     */
-    public $description;
+    public $room_total;
 
     /**
      * @Type("MssPhp\Schema\Response\Pictures")
      */
     public $pictures;
+
+    /**
+     * @Type("array<MssPhp\Schema\Response\Price>")
+     * @XmlList(inline = true, entry = "room_price")
+     */
+    public $room_price;
 
     /**
      * @Type("MssPhp\Schema\Response\Properties")
@@ -67,7 +88,7 @@ class Room {
     public $occupancy;
 
     /**
-     * @Type("MssPhp\Schema\Response\RoomNumbers")
+     * @Type("array<MssPhp\Schema\Response\RoomNumbers>")
      * @XmlList(inline = true, entry = "room_numbers")
      */
     public $room_numbers;
@@ -81,4 +102,9 @@ class Room {
      * @Type("MssPhp\Schema\Response\Days")
      */
     public $days;
+
+    /**
+     * @Type("string")
+     */
+    public $room_persons;
 }

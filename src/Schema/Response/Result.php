@@ -17,4 +17,14 @@ class Result {
      * @XmlList(inline = true, entry = "special")
      */
     public $special;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Booking")
+     */
+    public $booking;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Form")
+     */
+    public $form;
 }

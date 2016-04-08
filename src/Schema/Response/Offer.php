@@ -28,7 +28,17 @@ class Offer {
     /**
      * @Type("string")
      */
+    public $offer_title;
+
+    /**
+     * @Type("string")
+     */
     public $title;
+
+    /**
+     * @Type("string")
+     */
+    public $offer_description;
 
     /**
      * @Type("string")
