@@ -47,6 +47,11 @@ class Room {
     public $description;
 
     /**
+     * @Type("string")
+     */
+    public $room_persons;
+
+    /**
      * @Type("integer")
      */
     public $room_free;
@@ -102,9 +107,4 @@ class Room {
      * @Type("MssPhp\Schema\Response\Days")
      */
     public $days;
-
-    /**
-     * @Type("string")
-     */
-    public $room_persons;
 }

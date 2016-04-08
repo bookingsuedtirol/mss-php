@@ -16,7 +16,12 @@ class Address {
     public $zip;
 
     /**
-     * @Type("integer")
+     * @Type("string")
+     */
+    public $zipcode;
+
+    /**
+     * @Type("string")
      */
     public $city;
 

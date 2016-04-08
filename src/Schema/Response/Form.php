@@ -12,7 +12,7 @@ class Form {
     public $form_url;
 
     /**
-     * @Type("MssPhp\Schema\Response\FormFields")
+     * @Type(array<"MssPhp\Schema\Response\FormFields">)
      * @XmlList(inline = true, entry = "form_fields")
      */
     public $form_fields;
