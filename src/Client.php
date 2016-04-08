@@ -33,7 +33,7 @@ class Client
         if ($this->config['cache'] == true) {
             $serializer->setCacheDir(__DIR__ . '/Cache');
         }
-        
+
         $this->serializer = $serializer->build();
     }
 
@@ -43,11 +43,11 @@ class Client
      * @param callback $setup to modify request
      * @param string $type deserialization root class
      *
-     * @return MssPhp\Schema\Response\Root
+     * @return array
      */
     public function request($setup, $type = Response\Root::class)
     {
-        $req = clone($this->config['request']);
+        $req = $this->createNewRequest();
         $setup($req);
 
         $xmlReq = $this->serializer->serialize($req, 'xml');
@@ -55,6 +55,25 @@ class Client
         $xmlRes = $rawRes->getBody();
         $res = $this->serializer->deserialize($xmlRes, $type, 'xml');
         return json_decode($this->serializer->serialize($res, 'json'), true);
+    }
+
+    /**
+     * Creates a new request instance
+     *
+     * @return MssPhp\Schema\Request\Root
+     */
+    private function createNewRequest() {
+        $req = new Request\Root();
+        $req->header = new Request\Header();
+        $req->request = new Request\Request();
+        $req->request->search = new Request\Search();
+        $req->request->options = new Request\Options();
+        $req->header->credentials = new Request\Credentials();
+        $req->header->credentials->user = $this->config['user'];
+        $req->header->credentials->password = $this->config['password'];
+        $req->header->credentials->source = $this->config['source'];
+
+        return $req;
     }
 
     /**
@@ -73,28 +92,14 @@ class Client
             'verify' => false
         ]);
 
-        $req = new Request\Root();
-        $req->header = new Request\Header();
-        $req->request = new Request\Request();
-        $req->request->search = new Request\Search();
-        $req->request->options = new Request\Options();
-
         $defaults = [
             'user' => getenv('MSS_USER'),
             'password' => getenv('MSS_PASSWORD'),
             'source' => getenv('MSS_SOURCE'),
             'client' => $client,
-            'request' => $req,
             'cache' => false
         ];
 
-        $config = $userConfig + $defaults;
-
-        $req->header->credentials = new Request\Credentials();
-        $req->header->credentials->user = $config['user'];
-        $req->header->credentials->password = $config['password'];
-        $req->header->credentials->source = $config['source'];
-
-        return $config;
+        return $userConfig + $defaults;
     }
 }
