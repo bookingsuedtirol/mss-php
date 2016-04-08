@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\Type;
 
 class RoomNumbers {
     /**
-     * @Type("string")
+     * @Type("integer")
      */
     public $number;
 }

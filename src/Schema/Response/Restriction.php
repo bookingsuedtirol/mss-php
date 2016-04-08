@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\Type;
 
 class Restriction {
     /**
-     * @Type("string")
+     * @Type("integer")
      */
     public $obj_id;
 

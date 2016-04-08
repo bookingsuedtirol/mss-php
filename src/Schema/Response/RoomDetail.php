@@ -7,7 +7,7 @@ use JMS\Serializer\Annotation\AccessType;
 
 class RoomDetail {
     /**
-     * @Type("string")
+     * @Type("integer")
      */
     public $number;
 

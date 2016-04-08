@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\Type;
 
 class Special {
     /**
-     * @Type("string")
+     * @Type("integer")
      */
     public $offer_id;
 

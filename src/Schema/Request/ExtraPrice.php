@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\Type;
 
 class ExtraPrice {
     /**
-     * @Type("string")
+     * @Type("integer")
      */
     public $price_id;
 

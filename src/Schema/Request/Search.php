@@ -22,7 +22,7 @@ class Search {
     public $result_id;
 
     /**
-     * @Type("array<string>")
+     * @Type("array<integer>")
      * @XmlList(inline = true, entry="id")
      */
     public $id;
@@ -63,7 +63,7 @@ class Search {
     public $search_availability;
 
     /**
-     * @Type("array<string>")
+     * @Type("array<integer>")
      * @XmlList(inline = true, entry="in")
      */
     public $in;

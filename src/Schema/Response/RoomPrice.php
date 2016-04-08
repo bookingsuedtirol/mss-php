@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\Type;
 
 class RoomPrice {
     /**
-     * @Type("string")
+     * @Type("integer")
      */
     public $room_id;
 
@@ -16,7 +16,7 @@ class RoomPrice {
     public $room_seq;
 
     /**
-     * @Type("string")
+     * @Type("integer")
      */
     public $offer_id;
 

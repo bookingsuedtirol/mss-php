@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\Type;
 
 class Hotel {
     /**
-     * @Type("string")
+     * @Type("integer")
      */
     public $id;
 

@@ -7,7 +7,8 @@ use JMS\Serializer\Annotation\XmlList;
 
 class SearchSpecial {
     /**
-     * @Type("string")
+    * @Type("array<integer>")
+    * @XmlList(inline = true, entry="offer_id")
      */
     public $offer_id;
 
