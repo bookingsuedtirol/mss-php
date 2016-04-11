@@ -24,6 +24,11 @@ class Result {
     public $booking;
 
     /**
+     * @Type("MssPhp\Schema\Response\Booking")
+     */
+    public $inquiry;
+
+    /**
      * @Type("MssPhp\Schema\Response\Form")
      */
     public $form;
