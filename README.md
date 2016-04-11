@@ -6,6 +6,8 @@ MSS API wrapper for PHP projects
 - [x] getSpecialList
 - [x] getRoomList
 - [x] getRoomAvailability
+- [x] prepareBooking
+- [x] createInquiry
 
 ## Example
 ```php
@@ -63,4 +65,22 @@ $offer = $res['result']['hotel'][0]['channel']['offer_description']['offer'][0];
 
 var_dump($offer['offer_id']); // => string(5) "40444"
 var_dump($offer['title']); // => string(11) "Tagespreise"
+```
+
+## Exception handling
+If the MSS returns an error response, a `MssException` exception is thrown.
+
+```php
+use MssPhp\Exception;
+// ...
+
+try {
+    $res = $client->request(function($req) {
+    // ...
+    });
+} catch (Exception\MssException $e) {
+    var_dump($e->getMessage()); // => string(50) "Invalid value '2016-04-08' for parameter 'arrival'"
+    var_dump($e->getCode()); // => int(32)
+    die();
+}
 ```
