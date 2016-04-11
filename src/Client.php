@@ -5,6 +5,7 @@ namespace MssPhp;
 
 use MssPhp\Schema\Request;
 use MssPhp\Schema\Response;
+use MssPhp\Exception;
 
 class Client
 {
@@ -54,7 +55,15 @@ class Client
         $rawRes = $this->config['client']->post(null, ['body' => $xmlReq]);
         $xmlRes = $rawRes->getBody();
         $res = $this->serializer->deserialize($xmlRes, $type, 'xml');
-        return json_decode($this->serializer->serialize($res, 'json'), true);
+        $res = json_decode($this->serializer->serialize($res, 'json'), true);
+
+        $statusCode = (int) $res['header']['error']['code'];
+
+        if ($statusCode > 0) {
+            throw new Exception\MssException($res['header']['error']['message'], $statusCode);
+        }
+
+        return $res;
     }
 
     /**
