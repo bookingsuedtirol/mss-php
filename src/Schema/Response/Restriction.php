@@ -59,4 +59,14 @@ class Restriction {
      * @Type("integer")
      */
     public $holes;
+
+    /**
+     * @Type("integer")
+     */
+    public $days_arrival_min;
+
+    /**
+     * @Type("integer")
+     */
+    public $days_arrival_max;
 }
