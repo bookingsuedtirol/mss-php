@@ -34,4 +34,9 @@ class Data {
      * @Type("MssPhp\Schema\Request\Form")
      */
     public $form;
+
+    /**
+     * @Type("MssPhp\Schema\Request\Tracking")
+     */
+    public $tracking;
 }
