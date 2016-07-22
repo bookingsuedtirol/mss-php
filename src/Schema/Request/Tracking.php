@@ -9,4 +9,14 @@ class Tracking {
      * @Type("string")
      */
     public $partner;
+
+    /**
+     * @Type("string")
+     */
+    public $media;
+
+    /**
+     * @Type("string")
+     */
+    public $campain;
 }
