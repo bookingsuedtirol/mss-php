@@ -19,6 +19,16 @@ class Room {
     /**
      * @Type("integer")
      */
+    public $offer_id;
+
+    /**
+     * @Type("integer")
+     */
+    public $service;
+
+    /**
+     * @Type("integer")
+     */
     public $room_type;
 
     /**
