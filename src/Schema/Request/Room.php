@@ -9,17 +9,22 @@ class Room {
     /**
      * @Type("integer")
      */
+    public $offer_id;
+
+    /**
+     * @Type("integer")
+     */
     public $room_id;
 
     /**
      * @Type("integer")
      */
-    public $room_type;
+    public $service;
 
     /**
      * @Type("integer")
      */
-    public $offer_id;
+    public $room_type;
 
     /**
      * @Type("integer")
