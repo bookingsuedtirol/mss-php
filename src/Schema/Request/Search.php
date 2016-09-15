@@ -17,6 +17,11 @@ class Search {
     public $result_id;
 
     /**
+     * @Type("string")
+     */
+    public $agent;
+
+    /**
      * @Type("array<integer>")
      * @XmlList(inline = true, entry="id")
      */
