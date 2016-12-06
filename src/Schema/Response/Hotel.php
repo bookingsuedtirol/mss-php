@@ -154,4 +154,9 @@ class Hotel {
      * @Type("integer")
      */
     public $price_from;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Ratings")
+     */
+    public $ratings;
 }
