@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\Type;
 
 class Tracking {
     /**
-     * @Type("MssPhp\Schema\Response\Pixel")
+     * @Type("string")
      */
     public $pixel;
 }
