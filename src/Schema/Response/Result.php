@@ -32,4 +32,9 @@ class Result {
      * @Type("MssPhp\Schema\Response\Form")
      */
     public $form;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Tracking")
+     */
+    public $tracking;
 }
