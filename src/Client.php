@@ -6,6 +6,7 @@ namespace MssPhp;
 use MssPhp\Schema\Request;
 use MssPhp\Schema\Response;
 use MssPhp\Exception;
+use GuzzleHttp\Psr7;
 
 class Client
 {
@@ -52,7 +53,8 @@ class Client
         $setup($req);
 
         $xmlReq = $this->serializer->serialize($req, 'xml');
-        $rawRes = $this->config['client']->post(null, ['body' => $xmlReq]);
+        $rawReq = new Psr7\Request('POST', null, ['body' => $xmlReq]);
+        $rawRes = $this->config['client']->send($rawReq);
         $xmlRes = $rawRes->getBody();
         $res = $this->serializer->deserialize($xmlRes, $type, 'xml');
         $res = json_decode($this->serializer->serialize($res, 'json'), true);
@@ -60,7 +62,7 @@ class Client
         $statusCode = (int) $res['header']['error']['code'];
 
         if ($statusCode > 0) {
-            throw new Exception\MssException($res['header']['error']['message'], $statusCode);
+            throw new Exception\MssException($res['header']['error']['message'], $rawReq, $rawRes);
         }
 
         return $res;

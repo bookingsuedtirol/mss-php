@@ -1,4 +1,6 @@
 <?php
 namespace MssPhp\Exception;
 
-class MssException extends \Exception {}
+use GuzzleHttp\Exception\ServerException;
+
+class MssException extends \ServerException {}
