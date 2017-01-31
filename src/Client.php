@@ -53,8 +53,8 @@ class Client
         $setup($req);
 
         $xmlReq = $this->serializer->serialize($req, 'xml');
-        $rawReq = new Psr7\Request('POST', null, ['body' => $xmlReq]);
-        $rawRes = $this->config['client']->send($rawReq);
+        $rawReq = new Psr7\Request('POST', null, [], $xmlReq);
+        $rawRes = $this->config['client']->send($rawReq, ['body' => $xmlReq]);
         $xmlRes = $rawRes->getBody();
         $res = $this->serializer->deserialize($xmlRes, $type, 'xml');
         $res = json_decode($this->serializer->serialize($res, 'json'), true);
