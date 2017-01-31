@@ -7,6 +7,9 @@ use MssPhp\Schema\Request;
 use MssPhp\Schema\Response;
 use MssPhp\Exception;
 use GuzzleHttp\Psr7;
+use JMS\Serializer\Naming\CamelCaseNamingStrategy;
+use JMS\Serializer\Naming\SerializedNameAnnotationStrategy;
+use JMS\Serializer\XmlSerializationVisitor;
 
 class Client
 {
@@ -31,6 +34,11 @@ class Client
     {
         $this->config = $this->configureDefaults($config);
         $serializer = \JMS\Serializer\SerializerBuilder::create();
+
+        $namingStrategy = new SerializedNameAnnotationStrategy(new CamelCaseNamingStrategy());
+        $xmlVisitor = new XmlSerializationVisitor($namingStrategy);
+        $xmlVisitor->setFormatOutput(false);
+        $serializer->setSerializationVisitor('xml', $xmlVisitor);
 
         if ($this->config['cache'] == true) {
             $serializer->setCacheDir(__DIR__ . '/Cache');
