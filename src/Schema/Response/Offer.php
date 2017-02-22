@@ -18,6 +18,11 @@ class Offer {
     /**
      * @Type("integer")
      */
+    public $offer_base_id;
+
+    /**
+     * @Type("integer")
+     */
     public $offer_typ;
 
     /**

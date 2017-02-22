@@ -156,6 +156,11 @@ class Hotel {
     public $price_from;
 
     /**
+     * @Type("integer")
+     */
+    public $pers_age_min;
+
+    /**
      * @Type("MssPhp\Schema\Response\Ratings")
      */
     public $ratings;

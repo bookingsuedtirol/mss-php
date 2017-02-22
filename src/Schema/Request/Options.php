@@ -49,4 +49,9 @@ class Options {
      * @Type("integer")
      */
     public $get_roomdetails;
+
+    /**
+     * @Type("integer")
+     */
+    public $base_price;
 }

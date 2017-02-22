@@ -34,4 +34,9 @@ class Channel {
      * @Type("integer")
      */
     public $from_price;
+
+    /**
+     * @Type("MssPhp\Schema\Response\BasePrice")
+     */
+    public $base_price;
 }
