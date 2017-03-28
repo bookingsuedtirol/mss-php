@@ -11,7 +11,7 @@ class Address {
     public $street;
 
     /**
-     * @Type("integer")
+     * @Type("string")
      */
     public $zipcode;
 
