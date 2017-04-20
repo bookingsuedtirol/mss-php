@@ -3,6 +3,7 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\AccessType;
 
 class Guest {
     /**
@@ -32,8 +33,19 @@ class Guest {
 
     /**
      * @Type("string")
+     * @AccessType("public_method")
      */
     public $email;
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function setEmail($email)
+    {
+        $this->email = trim($email);
+    }
 
     /**
      * @Type("string")
