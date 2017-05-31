@@ -129,4 +129,9 @@ class Room {
      * @Type("MssPhp\Schema\Response\Days")
      */
     public $days;
+
+    /**
+     * @Type("integer")
+     */
+    public $price_from;
 }
