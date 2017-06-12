@@ -107,11 +107,9 @@ class Client
     {
         $client = new \GuzzleHttp\Client([
             'base_uri' => 'https://www.easymailing.eu/mss/mss_service.php',
-            'defaults' => [
-                'headers'  => [
-                    'Accept-Encoding' => 'gzip',
-                    'Content-Type' => 'text/xml; charset=UTF8'
-                ],
+            'headers' => [
+                'Accept-Encoding' => 'gzip',
+                'Content-Type' => 'text/xml; charset=UTF8'
             ],
             'timeout'  => 10,
             'verify' => false
