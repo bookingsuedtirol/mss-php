@@ -69,4 +69,9 @@ class Restriction {
      * @Type("integer")
      */
     public $days_arrival_max;
+
+    /**
+     * @Type("integer")
+     */
+    public $pers_age_min;
 }

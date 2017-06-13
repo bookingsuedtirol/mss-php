@@ -37,7 +37,7 @@ class Client
         $serializer = SerializerBuilder::create();
         $serializer->addDefaultSerializationVisitors();
         $serializer->addDefaultDeserializationVisitors();
-        // Configure XML serializer to not not format xml output
+        // Configure XML serializer to not format xml output
         $namingStrategy = new SerializedNameAnnotationStrategy(new CamelCaseNamingStrategy());
         $xmlVisitor = new XmlSerializationVisitor($namingStrategy);
         $xmlVisitor->setFormatOutput(false);
