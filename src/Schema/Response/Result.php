@@ -37,4 +37,10 @@ class Result {
      * @Type("MssPhp\Schema\Response\Tracking")
      */
     public $tracking;
+
+    /**
+     * @Type("array<MssPhp\Schema\Response\Source>")
+     * @XmlList(inline = true, entry = "source")
+     */
+    public $source;
 }
