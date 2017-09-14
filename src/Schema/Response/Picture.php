@@ -19,7 +19,7 @@ class Picture {
 
     public function setUrl($url)
     {
-        $this->url = str_replace('http://www.easymailing.eu', 'https://www.bookingsuedtirol.com', $url);
+        $this->url = str_replace('https://www.easymailing.eu', 'https://www.bookingsuedtirol.com', $url);
     }
 
     /**
