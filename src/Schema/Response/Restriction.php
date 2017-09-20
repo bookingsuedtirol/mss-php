@@ -43,6 +43,11 @@ class Restriction {
     /**
      * @Type("integer")
      */
+    public $max_arrival;
+
+    /**
+     * @Type("integer")
+     */
     public $close;
 
     /**
