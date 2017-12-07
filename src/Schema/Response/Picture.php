@@ -31,4 +31,9 @@ class Picture {
      * @Type("string")
      */
     public $title;
+
+    /**
+     * @Type("string")
+     */
+    public $copyright;
 }
