@@ -19,4 +19,9 @@ class Tracking {
      * @Type("string")
      */
     public $campain;
+
+    /**
+     * @Type("string")
+     */
+    public $companyinfo;
 }
