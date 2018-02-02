@@ -72,4 +72,19 @@ class Search {
      * @Type("string")
      */
     public $id_ofchannel;
+
+    /**
+     * @Type("string")
+     */
+    public $transaction_id;
+
+    /**
+     * @Type("string")
+     */
+    public $booking_id;
+
+        /**
+     * @Type("string")
+     */
+    public $guest_email;
 }

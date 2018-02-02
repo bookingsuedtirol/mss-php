@@ -7,6 +7,7 @@ MSS API wrapper for PHP projects
 - [x] getRoomList
 - [x] getRoomAvailability
 - [x] prepareBooking
+- [x] getBooking
 - [x] createInquiry
 - [x] getUserSources
 
