@@ -111,8 +111,7 @@ class Client
                 'Accept-Encoding' => 'gzip',
                 'Content-Type' => 'text/xml; charset=UTF8'
             ],
-            'timeout'  => 10,
-            'verify' => false
+            'timeout'  => 10
         ]);
 
         $defaults = [
