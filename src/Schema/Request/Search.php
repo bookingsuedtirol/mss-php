@@ -63,6 +63,11 @@ class Search {
     public $search_availability;
 
     /**
+     * @Type("MssPhp\Schema\Request\SearchPriceList")
+     */
+    public $search_pricelist;
+
+    /**
      * @Type("array<integer>")
      * @XmlList(inline = true, entry="in")
      */
