@@ -3,6 +3,7 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\AccessType;
 
 class Hotel {
     /**
@@ -22,8 +23,19 @@ class Hotel {
 
     /**
      * @Type("string")
+     * @AccessType("public_method")
      */
     public $name;
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setName($name)
+    {
+        $this->name = trim($name);
+    }
 
     /**
      * @Type("integer")
