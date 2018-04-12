@@ -54,4 +54,9 @@ class Options {
      * @Type("integer")
      */
     public $base_price;
+
+    /**
+     * @Type("integer")
+     */
+    public $pricelist_details;
 }

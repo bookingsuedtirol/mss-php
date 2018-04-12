@@ -134,4 +134,10 @@ class Room {
      * @Type("integer")
      */
     public $price_from;
+
+    /**
+     * @Type("array<MssPhp\Schema\Response\PriceList>")
+     * @XmlList(inline = true, entry = "pricelist")
+     */
+    public $pricelist;
 }

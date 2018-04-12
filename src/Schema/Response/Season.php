@@ -14,4 +14,9 @@ class Season {
      * @Type("DateTime<'Y-m-d'>")
      */
     public $date_end;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Price")
+     */
+    public $price;
 }
