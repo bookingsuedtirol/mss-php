@@ -11,7 +11,7 @@ class ExtraPrice {
     public $price_id;
 
     /**
-     * @Type("integer")
+     * @Type("double")
      */
     public $price_amount;
 }
