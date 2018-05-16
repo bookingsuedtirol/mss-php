@@ -22,7 +22,7 @@ class SearchOffer {
     public $service;
 
     /**
-     * @Type("string")
+     * @Type("integer")
      */
     public $feature;
 

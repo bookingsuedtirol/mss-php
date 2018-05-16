@@ -3,7 +3,6 @@
 namespace MssPhp\Schema\Request;
 
 use JMS\Serializer\Annotation\Type;
-use JMS\Serializer\Annotation\XmlList;
 
 class SearchLts {
     /**

@@ -23,4 +23,6 @@ class HotelDetails
     const DETAILED_HOTEL_FACILITIES = 131072;
     const SALES_POINT = 524288;
     const LTS_SPECIFIC_PARAMETERS = 262144;
+    const CHECK_IN_OUT = 1048576;
+    const SOURCE_DATA = 2097152;
 }
