@@ -3,6 +3,7 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\XmlList;
 
 class PriceList {
     /**
@@ -91,7 +92,8 @@ class PriceList {
     public $title;
 
     /**
-     * @Type("MssPhp\Schema\Response\Season")
+     * @Type("array<MssPhp\Schema\Response\Season>")
+     * @XmlList(inline = true, entry = "season")
      */
     public $season;
 }
