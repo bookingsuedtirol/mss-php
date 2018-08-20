@@ -39,4 +39,14 @@ class Channel {
      * @Type("MssPhp\Schema\Response\BasePrice")
      */
     public $base_price;
+
+    /**
+     * @Type("MssPhp\Schema\Response\CancelPolicies")
+     */
+    public $cancel_policies;
+
+    /**
+     * @Type("MssPhp\Schema\Response\PaymentTerms")
+     */
+    public $payment_terms;
 }

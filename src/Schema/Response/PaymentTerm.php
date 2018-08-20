@@ -4,11 +4,26 @@ namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
 
-class OnlinePayment {
+class PaymentTerm {
+    /**
+     * @Type("integer")
+     */
+    public $id;
+
+    /**
+     * @Type("integer")
+     */
+    public $owner_id;
+
     /**
      * @Type("integer")
      */
     public $methods;
+
+    /**
+     * @Type("integer")
+     */
+    public $ccards;
 
     /**
      * @Type("integer")
@@ -18,10 +33,15 @@ class OnlinePayment {
     /**
      * @Type("integer")
      */
-    public $ccards;
+    public $priority;
 
     /**
      * @Type("MssPhp\Schema\Response\Bank")
      */
     public $bank;
+
+    /**
+     * @Type("string")
+     */
+    public $description;
 }

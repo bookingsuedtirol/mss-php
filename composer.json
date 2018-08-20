@@ -1,6 +1,7 @@
 {
     "name": "hgv/mss-php",
     "type": "library",
+    "version": "2.0.0",
     "description": "MSS API wrapper for PHP projects",
     "homepage" : "https://github.com/HGV/mss-php",
     "keywords": ["mss","api","wrapper"],
@@ -9,17 +10,24 @@
         {
             "name": "David Mair Spiess",
             "email": "david.spiess@hgv.it"
+        },
+        {
+            "name": "Thomas Walter",
+            "email": "thomas.walter@hgv.it"
         }
     ],
     "require": {
         "php": ">=5.6.0",
         "jms/serializer": "^1.1",
         "guzzlehttp/guzzle": "^6.2",
-        "glynnforrest/crutches": "^0.3.2"
+        "glynnforrest/crutches": "^0.4.0"
     },
     "autoload": {
         "psr-4": {
             "MssPhp\\": "src/"
         }
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "^2.5"
     }
 }

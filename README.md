@@ -1,5 +1,6 @@
 # mss-php
-MSS API wrapper for PHP projects
+MSS API wrapper for PHP projects.
+Only supports MSS 2.0!
 
 ## Available services
 - [x] getHotelList
@@ -31,14 +32,14 @@ $res = $client->request(function($req) {
     $req->request->search->id[] = '11230';
     $req->request->options->hotel_details = (new Bitmask(
         HotelDetails::BASIC_INFO|
-        HotelDetails::PAYMENT_OPTIONS_FOR_ONLINE_BOOKING
+        HotelDetails::COORDINATES
     ))->getBitmask();
 });
 
 $hotel = $res['result']['hotel'][0];
 var_dump($hotel['name']); // => string(18) "Hotel Lichtenstern"
 var_dump($hotel['stars']); // => float(3)
-var_dump($hotel['online_payment']['bank']['iban']); // => string(27) "IT28K0818758740000001021022"
+var_dump($hotel["geolocation"]["latitude"]); // => float(46.53063158978)
 ```
 
 ## More complex example
