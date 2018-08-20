@@ -34,4 +34,14 @@ class RoomPrice {
     * @Type("MssPhp\Schema\Response\Price")
      */
     public $price_inclusive;
+
+    /**
+     * @Type("integer")
+     */
+    public $cancel_policy_id;
+
+    /**
+     * @Type("integer")
+     */
+    public $payment_term_id;
 }
