@@ -2,6 +2,7 @@
 
 namespace MssPhp\Schema\Response;
 
+use JMS\Serializer\Annotation\AccessType;
 use JMS\Serializer\Annotation\Type;
 
 class CancelPolicy {
@@ -26,7 +27,18 @@ class CancelPolicy {
     public $penalties;
 
     /**
+     * @AccessType("public_method")
      * @Type("string")
      */
     public $description;
+
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    public function setDescription($description)
+    {
+        $this->description = nl2br($description);
+    }
 }
