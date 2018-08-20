@@ -12,7 +12,7 @@ class Root {
     /**
      * @Type("string")
      */
-    public $version = '1.0';
+    public $version = '2.0';
 
     /**
      * @Type("MssPhp\Schema\Request\Header")

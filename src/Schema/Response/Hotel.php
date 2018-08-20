@@ -93,11 +93,6 @@ class Hotel {
     public $description;
 
     /**
-     * @Type("MssPhp\Schema\Response\OnlinePayment")
-     */
-    public $online_payment;
-
-    /**
      * @Type("MssPhp\Schema\Response\HotelPayment")
      */
     public $hotel_payment;

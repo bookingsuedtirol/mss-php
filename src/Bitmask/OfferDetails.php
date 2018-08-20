@@ -16,4 +16,6 @@ class OfferDetails
     const PRICE_IMAGES = 8192;
     const THEMES = 16384;
     const ROOM_FEATURES = 32768;
+    const CANCEL_POLICIES = 262144;
+    const PAYMENT_TERMS = 1048576;
 }

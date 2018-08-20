@@ -1,3 +1,5 @@
 /vendor/
 /src/Cache/
 composer.lock
+.env
+.vscode
