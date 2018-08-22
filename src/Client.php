@@ -6,11 +6,13 @@ namespace MssPhp;
 use MssPhp\Schema\Request;
 use MssPhp\Schema\Response;
 use MssPhp\Exception;
+use MssPhp\Handler;
 use GuzzleHttp\Psr7;
 use JMS\Serializer\SerializerBuilder;
 use JMS\Serializer\Naming\CamelCaseNamingStrategy;
 use JMS\Serializer\Naming\SerializedNameAnnotationStrategy;
 use JMS\Serializer\XmlSerializationVisitor;
+use JMS\Serializer\Handler\HandlerRegistry;
 
 class Client
 {
@@ -37,6 +39,10 @@ class Client
         $serializer = SerializerBuilder::create();
         $serializer->addDefaultSerializationVisitors();
         $serializer->addDefaultDeserializationVisitors();
+        // Add custom handlers
+        $serializer->configureHandlers(function(HandlerRegistry $registry) {
+            $registry->registerSubscribingHandler(new Handler\NullableDateHandler());
+        });
         // Configure XML serializer to not format xml output
         $namingStrategy = new SerializedNameAnnotationStrategy(new CamelCaseNamingStrategy());
         $xmlVisitor = new XmlSerializationVisitor($namingStrategy);

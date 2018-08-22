@@ -33,40 +33,14 @@ class Booking {
     public $hotel_id;
 
     /**
-     * @Type("string")
-     * @AccessType("public_method")
-     * Normally this should be "DateTime<'Y-m-d'>",
-     * but MSS returns an empty string if no date
-     * is provided which would lead to a serialize error. 
+     * @Type("DateTime<'Y-m-d'>")
      */
     public $arrival;
 
-    public function getArrival()
-    {
-        return $this->formatDate($this->arrival);
-    }
-
-    public function setArrival($arrival)
-    {
-        $this->arrival = $this->parseDate($arrival);
-    }
-
     /**
-     * @Type("string")
-     * @AccessType("public_method")
-     * Same as for $arrival
+     * @Type("DateTime<'Y-m-d'>")
      */
     public $departure;
-
-    public function getDeparture()
-    {
-        return $this->formatDate($this->departure);
-    }
-
-    public function setDeparture($departure)
-    {
-        $this->departure = $this->parseDate($departure);
-    }
 
     /**
      * @Type("integer")
@@ -125,16 +99,4 @@ class Booking {
      * @XmlList(inline = true, entry = "offer")
      */
     public $offer;
-
-    private function parseDate($date)
-    {
-        if (!$date) return null;
-        return \DateTime::createFromFormat('Y-m-d', $date, new \DateTimeZone('UTC'));
-    }
-
-    private function formatDate($date)
-    {
-        if (!$date) return null;
-        return $date->format('Y-m-d');
-    }
 }
