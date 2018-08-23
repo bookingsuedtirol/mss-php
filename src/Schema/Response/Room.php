@@ -105,6 +105,16 @@ class Room {
     public $room_price;
 
     /**
+     * @Type("MssPhp\Schema\Response\CancelPolicy")
+     */
+    public $cancel_policy;
+
+    /**
+     * @Type("MssPhp\Schema\Response\PaymentTerm")
+     */
+    public $payment_term;
+
+    /**
      * @Type("MssPhp\Schema\Response\Properties")
      */
     public $properties;

@@ -41,4 +41,9 @@ class CancelPolicy {
     {
         $this->description = nl2br($description);
     }
+
+    /**
+     * @Type("string")
+     */
+    public $priority;
 }
