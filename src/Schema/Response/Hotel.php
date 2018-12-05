@@ -165,6 +165,11 @@ class Hotel {
     /**
      * @Type("integer")
      */
+    public $board;
+
+    /**
+     * @Type("integer")
+     */
     public $pers_age_min;
 
     /**
