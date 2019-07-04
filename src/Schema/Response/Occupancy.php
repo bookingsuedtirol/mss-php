@@ -19,4 +19,9 @@ class Occupancy {
      * @Type("integer")
      */
     public $std;
+
+    /**
+     * @Type("integer")
+     */
+    public $mfp;
 }
