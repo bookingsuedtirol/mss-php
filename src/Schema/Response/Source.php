@@ -6,6 +6,11 @@ use JMS\Serializer\Annotation\Type;
 
 class Source {
     /**
+     * @Type("integer")
+     */
+    public $src_id;
+
+    /**
      * @Type("string")
      */
     public $sourcename;
