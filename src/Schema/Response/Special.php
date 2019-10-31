@@ -86,6 +86,26 @@ class Special {
     public $adults_max;
 
     /**
+     * @Type("integer")
+     */
+    public $pers_age_min;
+
+    /**
+     * @Type("integer")
+     */
+    public $child_age_min;
+
+    /**
+     * @Type("integer")
+     */
+    public $child_age_max;
+
+     /**
+     * @Type("integer")
+     */
+    public $adult_age_min;
+
+    /**
      * @Type("DateTime<'Y-m-d'>")
      */
     public $valid_start;
