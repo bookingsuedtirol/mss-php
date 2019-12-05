@@ -8,20 +8,75 @@ class Location {
     /**
      * @Type("integer")
      */
-    public $id_city;
+    public $id;
 
     /**
      * @Type("integer")
      */
-    public $id_community;
+    public $root_id;
 
     /**
      * @Type("integer")
      */
-    public $id_region;
+    public $parent_id;
+
+    /**
+     * @Type("string")
+     */
+    public $virtual_id;
+
+    /**
+     * @Type("string")
+     */
+    public $typ;
 
     /**
      * @Type("integer")
      */
-    public $id_area;
+    public $visible;
+
+    /**
+     * @Type("double")
+     */
+    public $latitude;
+
+    /**
+     * @Type("double")
+     */
+    public $longitude;
+
+    /**
+     * @Type("string")
+     */
+    public $name_deu;
+
+    /**
+     * @Type("string")
+     */
+    public $name_ita;
+
+    /**
+     * @Type("string")
+     */
+    public $name_spa;
+
+    /**
+     * @Type("string")
+     */
+    public $name_fra;
+
+    /**
+     * @Type("string")
+     */
+    public $name_rus;
+
+    /**
+     * @Type("string")
+     */
+    public $name_dan;
+
+    /**
+     * @Type("string")
+     */
+    public $name_eng;
 }

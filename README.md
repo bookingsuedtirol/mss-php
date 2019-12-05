@@ -12,6 +12,7 @@ Only supports MSS 2.0!
 - [x] getBooking
 - [x] createInquiry
 - [x] getUserSources
+- [x] getLocationList
 
 ## Example
 ```php

@@ -43,4 +43,10 @@ class Result {
      * @XmlList(inline = true, entry = "source")
      */
     public $source;
+
+     /**
+     * @Type("array<MssPhp\Schema\Response\Location>")
+     * @XmlList(inline = true, entry = "location")
+     */
+    public $location;
 }

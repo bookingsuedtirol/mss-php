@@ -92,4 +92,19 @@ class Search {
      * @Type("string")
      */
     public $guest_email;
+
+    /**
+     * @Type("integer")
+     */
+    public $root_id;
+
+    /**
+     * @Type("string")
+     */
+    public $typ;
+
+    /**
+     * @Type("integer")
+     */
+    public $location_details;
 }

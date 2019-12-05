@@ -63,7 +63,7 @@ class Hotel {
     public $features;
 
     /**
-     * @Type("MssPhp\Schema\Response\Location")
+     * @Type("MssPhp\Schema\Response\HotelLocation")
      */
     public $location;
 
