@@ -16,6 +16,11 @@ class Company {
     public $taxnumber;
 
     /**
+     * @Type("string")
+     */
+    public $recipient_code;
+
+    /**
      * @Type("MssPhp\Schema\Request\Address")
      */
     public $address;
