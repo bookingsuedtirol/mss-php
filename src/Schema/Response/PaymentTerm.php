@@ -44,4 +44,9 @@ class PaymentTerm {
      * @Type("string")
      */
     public $description;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Insurance")
+     */
+    public $insurance;
 }

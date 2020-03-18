@@ -1,7 +1,7 @@
 {
     "name": "hgv/mss-php",
     "type": "library",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "description": "MSS API wrapper for PHP projects",
     "homepage" : "https://github.com/HGV/mss-php",
     "keywords": ["mss","api","wrapper"],

@@ -99,4 +99,9 @@ class Booking {
      * @XmlList(inline = true, entry = "offer")
      */
     public $offer;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Insurance")
+     */
+    public $insurance;
 }

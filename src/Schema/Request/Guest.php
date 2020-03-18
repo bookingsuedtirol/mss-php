@@ -44,4 +44,9 @@ class Guest {
      * @Type("integer")
      */
     public $newsletter;
+    
+    /**
+     * @Type("integer")
+     */
+    public $insurance;
 }
