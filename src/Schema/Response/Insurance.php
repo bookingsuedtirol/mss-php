@@ -14,4 +14,9 @@ class Insurance {
      * @Type("string")
      */
     public $insurance_url;
+
+    /**
+     * @Type("string")
+     */
+    public $agency_nr;
 }
