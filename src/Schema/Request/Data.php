@@ -39,4 +39,9 @@ class Data {
      * @Type("MssPhp\Schema\Request\Tracking")
      */
     public $tracking;
+
+    /**
+     * @Type("integer")
+     */
+    public $insurance;
 }
