@@ -8,11 +8,6 @@ class Insurance {
     /**
      * @Type("integer")
      */
-    public $type;
-
-    /**
-     * @Type("integer")
-     */
     public $insurance_type;
 
     /**
