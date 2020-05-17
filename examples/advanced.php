@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 use Crutches\Bitmask;
@@ -23,8 +23,8 @@ $res = $client->request(function($req) {
     ))->getBitmask();
 
     $offer = $req->request->search->search_offer = new Request\SearchOffer();
-    $offer->arrival = new DateTime('2018-09-17');
-    $offer->departure = new DateTime('2018-09-21');
+    $offer->arrival = new DateTime();
+    $offer->departure = (new DateTime())->modify('+1 week');
     $offer->service = 0;
     $offer->room[] = new Request\Room();
     $offer->room[0]->room_seq = 1;

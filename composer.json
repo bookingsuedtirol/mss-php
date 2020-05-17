@@ -1,7 +1,6 @@
 {
     "name": "hgv/mss-php",
     "type": "library",
-    "version": "2.2.0",
     "description": "MSS API wrapper for PHP projects",
     "homepage" : "https://github.com/HGV/mss-php",
     "keywords": ["mss","api","wrapper"],
@@ -27,7 +26,7 @@
         }
     },
     "require-dev": {
-        "glynnforrest/crutches": "^0.4.0",
-        "vlucas/phpdotenv": "^2.5"
+        "glynnforrest/crutches": "^0.4",
+        "vlucas/phpdotenv": "^4.1"
     }
 }

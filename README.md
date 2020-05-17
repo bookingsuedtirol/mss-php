@@ -1,8 +1,10 @@
 # mss-php
+
 MSS API wrapper for PHP projects.
 Only supports MSS 2.0!
 
 ## Available services
+
 - [x] getHotelList
 - [x] getSpecialList
 - [x] getRoomList
@@ -15,7 +17,9 @@ Only supports MSS 2.0!
 - [x] getLocationList
 
 ## Example
+
 ```php
+<?php
 require __DIR__ . '/vendor/autoload.php';
 
 use Crutches\Bitmask;
@@ -46,9 +50,11 @@ var_dump($hotel["geolocation"]["latitude"]); // => float(46.53063158978)
 Check out the `examples` directory for more advanced usage.
 
 ## Exception handling
+
 If the MSS returns an error response, a `MssException` exception is thrown.
 
 ```php
+<?php
 use MssPhp\Exception;
 // ...
 
