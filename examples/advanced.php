@@ -23,8 +23,8 @@ $res = $client->request(function($req) {
     ))->getBitmask();
 
     $offer = $req->request->search->search_offer = new Request\SearchOffer();
-    $offer->arrival = new DateTime('2018-09-17');
-    $offer->departure = new DateTime('2018-09-21');
+    $offer->arrival = new DateTime();
+    $offer->departure = (new DateTime())->modify('+1 week');
     $offer->service = 0;
     $offer->room[] = new Request\Room();
     $offer->room[0]->room_seq = 1;
