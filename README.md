@@ -1,5 +1,7 @@
 # mss-php
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/hgv/mss-php.svg?style=flat-square)](https://packagist.org/packages/hgv/mss-php)
+
 MSS API wrapper for PHP projects.
 Only supports MSS 2.0!
 
