@@ -1,36 +1,32 @@
 {
-  "name": "hgv/mss-php",
-  "type": "library",
-  "description": "MSS API wrapper for PHP projects",
-  "homepage": "https://github.com/HGV/mss-php",
-  "keywords": [
-    "mss",
-    "api",
-    "wrapper"
-  ],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "David Mair Spiess",
-      "email": "david.spiess@hgv.it"
+    "name": "hgv/mss-php",
+    "type": "library",
+    "description": "MSS API wrapper for PHP projects",
+    "homepage" : "https://github.com/HGV/mss-php",
+    "keywords": ["mss","api","wrapper"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Mair Spiess",
+            "email": "david.spiess@hgv.it"
+        },
+        {
+            "name": "Thomas Walter",
+            "email": "thomas.walter@hgv.it"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "jms/serializer": "^1.1",
+        "guzzlehttp/guzzle": "^6.2"
     },
-    {
-      "name": "Thomas Walter",
-      "email": "thomas.walter@hgv.it"
+    "autoload": {
+        "psr-4": {
+            "MssPhp\\": "src/"
+        }
+    },
+    "require-dev": {
+        "glynnforrest/crutches": "^0.4",
+        "vlucas/phpdotenv": "^4.1"
     }
-  ],
-  "require": {
-    "php": ">=5.6.0",
-    "jms/serializer": "^1.1",
-    "guzzlehttp/guzzle": "^6.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "MssPhp\\": "src/"
-    }
-  },
-  "require-dev": {
-    "glynnforrest/crutches": "^0.4.0",
-    "vlucas/phpdotenv": "^4.1.5"
-  }
 }
