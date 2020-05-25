@@ -13,13 +13,23 @@ use JMS\Serializer\Naming\CamelCaseNamingStrategy;
 use JMS\Serializer\Naming\SerializedNameAnnotationStrategy;
 use JMS\Serializer\XmlSerializationVisitor;
 use JMS\Serializer\Handler\HandlerRegistry;
+use Psr\Http\Client\ClientInterface;
+use Http\Discovery\Psr18ClientDiscovery;
+use Http\Discovery\Psr17FactoryDiscovery;
+use Http\Client\Common\Plugin;
+use Http\Client\Common\PluginClient;
 
-class Client
+final class Client
 {
     /**
      * @var JMS\Serializer
      */
-    public $serializer;
+    private $serializer;
+
+    /**
+     * @var ClientInterface|PluginClient
+     */
+    private $httpClient;
 
     /**
      *  Default request options
@@ -28,14 +38,11 @@ class Client
      */
     private $config;
 
-    /**
-     * Clients accept an array of constructor parameters.
-     *
-     * @param array $config Client configuration settings.
-     */
+
     public function __construct(array $config = [])
     {
-        $this->config = $this->configureDefaults($config);
+        $this->setConfig($config);
+        $this->httpClient = $this->createConfiguredClient();
         $serializer = SerializerBuilder::create();
         $serializer->addDefaultSerializationVisitors();
         $serializer->addDefaultDeserializationVisitors();
@@ -48,12 +55,31 @@ class Client
         $xmlVisitor = new XmlSerializationVisitor($namingStrategy);
         $xmlVisitor->setFormatOutput(false);
         $serializer->setSerializationVisitor('xml', $xmlVisitor);
-
-        if ($this->config['cache'] == true) {
-            $serializer->setCacheDir(__DIR__ . '/Cache');
-        }
-
         $this->serializer = $serializer->build();
+    }
+
+    public function setConfig(array $config)
+    {
+        $default = [
+            'user' => getenv('MSS_USER'),
+            'password' => getenv('MSS_PASSWORD'),
+            'source' => getenv('MSS_SOURCE'),
+            'client' => Psr18ClientDiscovery::find()
+        ];
+
+        $this->config = $config + $default;
+    }
+
+    private function createConfiguredClient(): PluginClient
+    {
+        $plugins = [
+            new Plugin\HeaderDefaultsPlugin([
+                'Accept-Encoding' => 'gzip',
+                'Content-Type' => 'text/xml; charset=UTF8'
+            ])
+        ];
+
+        return new PluginClient($this->config['client'], $plugins);
     }
 
     /**
@@ -66,20 +92,27 @@ class Client
      */
     public function request($setup, $type = Response\Root::class)
     {
-        $req = $this->createNewRequest();
-        $setup($req);
+        $xmlReq = $this->createNewXmlRequest();
+        $setup($xmlReq);
+        
+        $reqBody = $this->serializer->serialize($xmlReq, 'xml');
+        
+        $stream = Psr17FactoryDiscovery::findStreamFactory()
+            ->createStream($reqBody);
 
-        $xmlReq = $this->serializer->serialize($req, 'xml');
-        $rawReq = new Psr7\Request('POST', null, [], $xmlReq);
-        $rawRes = $this->config['client']->send($rawReq, ['body' => $xmlReq]);
-        $xmlRes = $rawRes->getBody();
-        $res = $this->serializer->deserialize($xmlRes, $type, 'xml');
+        $request = Psr17FactoryDiscovery::findRequestFactory()
+            ->createRequest('POST', 'https://www.easymailing.eu/mss/mss_service.php')
+            ->withBody($stream);
+
+        $response = $this->httpClient->sendRequest($request);
+        $resBody = $response->getBody();
+
+        $res = $this->serializer->deserialize($resBody, $type, 'xml');
         $res = json_decode($this->serializer->serialize($res, 'json'), true);
-
         $statusCode = (int) $res['header']['error']['code'];
 
         if ($statusCode > 0) {
-            throw new Exception\MssException($res['header']['error']['message'], $rawReq, $rawRes);
+            throw new Exception\MssException($res['header']['error']['message'], $request, $response);
         }
 
         return $res;
@@ -90,7 +123,7 @@ class Client
      *
      * @return MssPhp\Schema\Request\Root
      */
-    private function createNewRequest() {
+    private function createNewXmlRequest() {
         $req = new Request\Root();
         $req->header = new Request\Header();
         $req->request = new Request\Request();
@@ -102,32 +135,5 @@ class Client
         $req->header->credentials->source = $this->config['source'];
 
         return $req;
-    }
-
-    /**
-     * Configures the default options for a client.
-     *
-     * @param array $config
-     */
-    private function configureDefaults(array $userConfig)
-    {
-        $client = new \GuzzleHttp\Client([
-            'base_uri' => 'https://www.easymailing.eu/mss/mss_service.php',
-            'headers' => [
-                'Accept-Encoding' => 'gzip',
-                'Content-Type' => 'text/xml; charset=UTF8'
-            ],
-            'timeout'  => 10
-        ]);
-
-        $defaults = [
-            'user' => getenv('MSS_USER'),
-            'password' => getenv('MSS_PASSWORD'),
-            'source' => getenv('MSS_SOURCE'),
-            'client' => $client,
-            'cache' => false
-        ];
-
-        return $userConfig + $defaults;
     }
 }
