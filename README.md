@@ -2,8 +2,20 @@
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/hgv/mss-php.svg?style=flat-square)](https://packagist.org/packages/hgv/mss-php)
 
-MSS API wrapper for PHP projects.
+MSS API Client for PHP projects.
 Only supports MSS 2.0!
+
+## Installation
+
+The MSS API Client is not hard coupled to Guzzle, Buzz or any other library that sends
+HTTP messages. Instead, it uses the [PSR-18](https://www.php-fig.org/psr/psr-18/) client abstraction.
+This will give you the flexibility to choose what
+[PSR-7 implementation and HTTP client](https://packagist.org/providers/php-http/client-implementation)
+you want to use.
+
+```bash
+composer require hgv/mss-php kriswallsmith/buzz nyholm/psr7
+```
 
 ## Available services
 
