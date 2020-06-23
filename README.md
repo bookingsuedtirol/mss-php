@@ -17,6 +17,7 @@ Only supports MSS 2.0!
 - [x] createInquiry
 - [x] getUserSources
 - [x] getLocationList
+- [x] getMasterpackagesList
 
 ## Example
 

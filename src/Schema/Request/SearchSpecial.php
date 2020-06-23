@@ -29,6 +29,18 @@ class SearchSpecial {
     public $theme;
 
     /**
+     * @Type("array<integer>")
+     * @XmlList(inline = true, entry="poi_id")
+     */
+    public $poi_id;
+
+    /**
+     * @Type("array<integer>")
+     * @XmlList(inline = true, entry="poi_cat")
+     */
+    public $poi_cat;
+
+    /**
      * @Type("MssPhp\Schema\Request\Validity")
      */
     public $validity;
