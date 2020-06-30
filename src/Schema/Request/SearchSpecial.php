@@ -54,4 +54,9 @@ class SearchSpecial {
      * @Type("integer")
      */
     public $premium;
+
+    /**
+     * @Type("integer")
+     */
+    public $status;
 }
