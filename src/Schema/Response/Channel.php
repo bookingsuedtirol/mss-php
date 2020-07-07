@@ -11,6 +11,11 @@ class Channel {
     public $channel_id;
 
     /**
+     * @Type("integer")
+     */
+    public $offer_id;
+
+    /**
      * @Type("MssPhp\Schema\Response\OfferDescription")
      */
     public $offer_description;
