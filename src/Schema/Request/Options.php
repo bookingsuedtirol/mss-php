@@ -59,4 +59,9 @@ class Options {
      * @Type("integer")
      */
     public $pricelist_details;
+
+    /**
+     * @Type("integer")
+     */
+    public $only_subscribed_hotels;
 }
