@@ -29,6 +29,7 @@ composer require hgv/mss-php kriswallsmith/buzz nyholm/psr7
 - [x] createInquiry
 - [x] getUserSources
 - [x] getLocationList
+- [x] getMasterpackagesList
 
 ## Example
 

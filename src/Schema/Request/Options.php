@@ -53,6 +53,11 @@ class Options {
     /**
      * @Type("integer")
      */
+    public $get_masterpackages;
+
+    /**
+     * @Type("integer")
+     */
     public $base_price;
 
     /**

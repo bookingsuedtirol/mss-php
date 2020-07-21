@@ -13,6 +13,16 @@ class Restriction {
     /**
      * @Type("integer")
      */
+    public $obj_sub_id;
+
+    /**
+     * @Type("integer")
+     */
+    public $obj_sub_only;
+
+    /**
+     * @Type("integer")
+     */
     public $service;
 
     /**
