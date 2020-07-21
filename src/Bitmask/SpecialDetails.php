@@ -10,4 +10,6 @@ class SpecialDetails
     const IMAGES = 16;
     const THEMES = 32;
     const INCLUDED_SERVICES = 64;
+    const HOTEL_INCLUDED_SERVICES = 128;
+    const HOTEL_MANDATORY_SERVICES = 256;
 }
