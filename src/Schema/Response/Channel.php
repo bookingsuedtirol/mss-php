@@ -54,4 +54,9 @@ class Channel {
      * @Type("MssPhp\Schema\Response\PaymentTerms")
      */
     public $payment_terms;
+
+    /**
+     * @Type("MssPhp\Schema\Response\ChannelPriceList")
+     */
+    public $pricelist;
 }
