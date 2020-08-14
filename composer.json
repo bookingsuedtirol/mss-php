@@ -29,7 +29,7 @@
     },
     "require-dev": {
         "glynnforrest/crutches": "^0.4",
-        "vlucas/phpdotenv": "^4.1",
+        "vlucas/phpdotenv": "^5.1",
         "nyholm/psr7": "^1.0",
         "php-http/guzzle6-adapter": "^2.0"
     }
