@@ -61,9 +61,9 @@ final class Client
     public function setConfig(array $config)
     {
         $default = [
-            'user' => getenv('MSS_USER'),
-            'password' => getenv('MSS_PASSWORD'),
-            'source' => getenv('MSS_SOURCE'),
+            'user' => $_ENV['MSS_USER'],
+            'password' => $_ENV['MSS_PASSWORD'],
+            'source' => $_ENV['MSS_SOURCE'],
             'client' => Psr18ClientDiscovery::find()
         ];
 
