@@ -27,6 +27,6 @@
     },
     "require-dev": {
         "glynnforrest/crutches": "^0.4",
-        "vlucas/phpdotenv": "^4.1"
+        "vlucas/phpdotenv": "^5.1"
     }
 }
