@@ -178,6 +178,31 @@ class Hotel {
     public $pers_age_min;
 
     /**
+     * @Type("integer")
+     */
+    public $child_age_min;
+
+    /**
+     * @Type("integer")
+     */
+    public $adult_age_min;
+
+    /**
+     * @Type("integer")
+     */
+    public $child_age_max;
+
+    /**
+     * @Type("integer")
+     */
+    public $adult_cnt_max;
+
+    /**
+     * @Type("integer")
+     */
+    public $child_cnt_max;
+
+    /**
      * @Type("MssPhp\Schema\Response\Ratings")
      */
     public $ratings;
