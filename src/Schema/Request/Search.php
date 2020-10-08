@@ -99,9 +99,19 @@ class Search {
     public $root_id;
 
     /**
+     * @Type("integer")
+     */
+    public $external_id;
+
+    /**
      * @Type("string")
      */
     public $typ;
+
+    /**
+     * @Type("string")
+     */
+    public $seo_typ;
 
     /**
      * @Type("integer")

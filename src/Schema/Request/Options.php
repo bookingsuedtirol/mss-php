@@ -26,6 +26,11 @@ class Options {
     public $special_details;
 
     /**
+     * @Type("integer")
+     */
+    public $seo_details;
+
+    /**
      * @Type("DateTime<'Y-m-d'>")
      */
     public $picture_date;

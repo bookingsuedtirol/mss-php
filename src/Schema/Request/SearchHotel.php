@@ -16,7 +16,7 @@ class SearchHotel {
     public $type;
 
     /**
-     * @Type("Stars")
+     * @Type("MssPhp\Schema\Request\Stars")
      */
     public $stars;
 
