@@ -55,4 +55,10 @@ class Result {
      * @XmlList(inline = true, entry = "location")
      */
     public $location;
+
+     /**
+     * @Type("array<MssPhp\Schema\Response\ThemeList>")
+     * @XmlList(inline = true, entry = "theme")
+     */
+    public $theme;
 }
