@@ -18,6 +18,7 @@ Only supports MSS 2.0!
 - [x] getUserSources
 - [x] getLocationList
 - [x] getMasterpackagesList
+- [x] getThemeList
 
 ## Example
 
