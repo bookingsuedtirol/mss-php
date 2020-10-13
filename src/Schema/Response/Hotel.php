@@ -206,4 +206,9 @@ class Hotel {
      * @Type("MssPhp\Schema\Response\Ratings")
      */
     public $ratings;
+
+    /**
+     * @Type("MssPhp\Schema\Response\SourceData")
+     */
+    public $source_data;
 }
