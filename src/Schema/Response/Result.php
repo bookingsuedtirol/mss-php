@@ -57,7 +57,7 @@ class Result {
     public $location;
 
      /**
-     * @Type("array<MssPhp\Schema\Response\ThemeList>")
+     * @Type("array<MssPhp\Schema\Response\ThemeListItem>")
      * @XmlList(inline = true, entry = "theme")
      */
     public $theme;
