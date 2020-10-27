@@ -30,6 +30,7 @@ composer require hgv/mss-php kriswallsmith/buzz nyholm/psr7
 - [x] getUserSources
 - [x] getLocationList
 - [x] getMasterpackagesList
+- [x] getThemeList
 
 ## Example
 
