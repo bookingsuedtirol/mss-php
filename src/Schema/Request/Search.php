@@ -121,7 +121,7 @@ class Search {
     /**
      * @Type("string")
      */
-    public $integer;
+    public $coupon_code;
 
     /**
      * @Type("double")
