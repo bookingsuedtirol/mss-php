@@ -29,4 +29,9 @@ class SearchHotel {
      * @Type("integer")
      */
     public $theme;
+
+    /**
+     * @Type("integer")
+     */
+    public $room_type;
 }

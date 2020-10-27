@@ -124,6 +124,11 @@ class Search {
     public $coupon_code;
 
     /**
+     * @Type("string")
+     */
+    public $coupon_type;
+
+    /**
      * @Type("double")
      */
     public $total_price;
