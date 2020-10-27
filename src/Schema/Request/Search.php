@@ -117,4 +117,14 @@ class Search {
      * @Type("integer")
      */
     public $location_details;
+
+    /**
+     * @Type("string")
+     */
+    public $integer;
+
+    /**
+     * @Type("double")
+     */
+    public $total_price;
 }

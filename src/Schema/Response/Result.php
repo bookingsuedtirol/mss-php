@@ -61,4 +61,9 @@ class Result {
      * @XmlList(inline = true, entry = "theme")
      */
     public $theme;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Coupon")
+     */
+    public $coupon;
 }

@@ -19,6 +19,7 @@ Only supports MSS 2.0!
 - [x] getLocationList
 - [x] getMasterpackagesList
 - [x] getThemeList
+- [x] validateCoupon
 
 ## Example
 
