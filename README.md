@@ -1,6 +1,6 @@
 # mss-php
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/hgv/mss-php.svg?style=flat-square)](https://packagist.org/packages/hgv/mss-php)
+[![Packagist Version (including pre-releases)](https://img.shields.io/packagist/v/hgv/mss-php.svg?include_prereleases&style=flat-square)](https://packagist.org/packages/hgv/mss-php)
 
 MSS API Client for PHP projects.
 Only supports MSS 2.0!
