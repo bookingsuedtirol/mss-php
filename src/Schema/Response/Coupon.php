@@ -26,12 +26,12 @@ class Coupon {
     public $coupon_valid;
 
     /**
-     * @Type("DateTime<'Y-m-d H:i:s'>")
+     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
      */
     public $coupon_valid_from;
 
     /**
-     * @Type("DateTime<'Y-m-d H:i:s'>")
+     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
      */
     public $coupon_valid_to;
 
