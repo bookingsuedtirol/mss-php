@@ -18,6 +18,7 @@ use Http\Discovery\Psr18ClientDiscovery;
 use Http\Discovery\Psr17FactoryDiscovery;
 use Http\Client\Common\Plugin;
 use Http\Client\Common\PluginClient;
+use Http\Client\Common\Plugin\DecoderPlugin;
 
 final class Client
 {
@@ -76,7 +77,8 @@ final class Client
             new Plugin\HeaderDefaultsPlugin([
                 'Accept-Encoding' => 'gzip',
                 'Content-Type' => 'text/xml; charset=UTF8'
-            ])
+            ]),
+            new DecoderPlugin()
         ];
 
         return new PluginClient($this->config['client'], $plugins);
