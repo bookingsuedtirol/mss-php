@@ -104,4 +104,9 @@ class Booking {
      * @Type("MssPhp\Schema\Response\Insurance")
      */
     public $insurance;
+
+    /**
+     * @Type("MssPhp\Schema\Response\Coupon")
+     */
+    public $coupon;
 }
