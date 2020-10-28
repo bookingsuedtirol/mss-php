@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0-beta.3] - 2020-10-28
+
+### Added
+
+- Add missing coupon request/response properties in `prepareBooking` method.
+
+### Changed
+
+- Changed `Schema\Request\SearchHotel@type` to an array of integers.
+
 ## [2.0.0-beta.2] - 2020-10-27
 
 ### Added
@@ -31,4 +41,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Replace `guzzlehttp/guzzle` with any `PSR-18` compatible http-client.
 - `MssException` inherits from `Http\Client\Exception\HttpException` instead of `GuzzleHttp\Exception\ServerException`.
-- Minimum supported PHP Version increased to `7.1`
+- Minimum supported PHP Version increased to `7.1`.
