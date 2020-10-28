@@ -3,6 +3,7 @@
 namespace MssPhp\Schema\Request;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\XmlList;
 
 class SearchHotel {
     /**
@@ -11,7 +12,8 @@ class SearchHotel {
     public $name;
 
     /**
-     * @Type("integer")
+     * @Type("array<integer>")
+     * @XmlList(inline = true, entry="type")
      */
     public $type;
 
