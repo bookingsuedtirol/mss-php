@@ -1,9 +1,9 @@
 {
     "name": "hgv/mss-php",
     "type": "library",
-    "description": "MSS API wrapper for PHP projects",
+    "description": "MSS API Client for PHP projects",
     "homepage" : "https://github.com/HGV/mss-php",
-    "keywords": ["mss","api","wrapper"],
+    "keywords": ["mss","api","client"],
     "license": "MIT",
     "authors": [
         {

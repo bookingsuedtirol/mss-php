@@ -11,4 +11,9 @@ class Details {
      * @XmlList(inline = true, entry = "extra_price")
      */
     public $extra_price;
+
+    /**
+     * @Type("MssPhp\Schema\Request\Coupon")
+     */
+    public $coupon;
 }
