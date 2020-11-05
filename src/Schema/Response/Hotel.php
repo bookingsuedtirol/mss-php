@@ -211,4 +211,9 @@ class Hotel {
      * @Type("MssPhp\Schema\Response\SourceData")
      */
     public $source_data;
+
+    /**
+     * @Type("MssPhp\Schema\Response\CouponService")
+     */
+    public $coupon;
 }
