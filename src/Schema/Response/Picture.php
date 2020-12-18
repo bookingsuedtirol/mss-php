@@ -36,4 +36,14 @@ class Picture {
      * @Type("string")
      */
     public $copyright;
+
+    /**
+     * @Type("integer")
+     */
+    public $width;
+
+    /**
+     * @Type("integer")
+     */
+    public $height;
 }
