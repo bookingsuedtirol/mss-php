@@ -21,7 +21,7 @@ class Geolocation {
     public $altitude;
 
     /**
-     * @Type("integer")
+     * @Type("double")
      */
     public $distance;
 }
