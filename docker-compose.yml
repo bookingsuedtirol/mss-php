@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  cli:
+    build: .
+    tty: true
+    volumes:
+      - .:/usr/src
