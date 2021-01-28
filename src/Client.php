@@ -111,10 +111,16 @@ final class Client
 
         $res = $this->serializer->deserialize($resBody, $type, 'xml');
         $res = json_decode($this->serializer->serialize($res, 'json'), true);
-        $statusCode = (int) $res['header']['error']['code'];
+        $error = $res['header']['error'];
+        $errorCode = (int) $error['code'];
 
-        if ($statusCode > 0) {
-            throw new Exception\MssException($res['header']['error']['message'], $request, $response);
+        if ($errorCode > 0) {
+            throw new Exception\MssException(
+                $errorCode,
+                $error['message'],
+                $request,
+                $response
+            );
         }
 
         return $res;
