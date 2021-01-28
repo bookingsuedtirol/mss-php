@@ -14,11 +14,11 @@ final class MssException extends HttpException
     private $errorCode;
     
     public function __construct(
-        int $code,
         $message,
         RequestInterface $request,
         ResponseInterface $response,
-        \Exception $previous = null
+        \Exception $previous = null,
+        int $code = ErrorCodes::GENERIC_ERROR
     ) {
         $statusCode = self::mapErrorToStatusCode($code);
         parent::__construct($message, $request, $response->withStatus($statusCode), $previous);

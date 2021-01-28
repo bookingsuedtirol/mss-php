@@ -116,10 +116,11 @@ final class Client
 
         if ($errorCode > 0) {
             throw new Exception\MssException(
-                $errorCode,
                 $error['message'],
                 $request,
-                $response
+                $response,
+                null,
+                $errorCode
             );
         }
 
