@@ -60,9 +60,9 @@ $res = $client->request(function($req) {
 });
 
 $hotel = $res['result']['hotel'][0];
-var_dump($hotel['name']); // => string(18) "Hotel Lichtenstern"
-var_dump($hotel['stars']); // => float(3)
-var_dump($hotel["geolocation"]["latitude"]); // => float(46.53063158978)
+$hotel['name']; // => string(18) "Hotel Lichtenstern"
+$hotel['stars']; // => float(3)
+$hotel["geolocation"]["latitude"]; // => float(46.53063158978)
 ```
 
 Check out the `examples` directory for more advanced usage.
@@ -81,8 +81,8 @@ try {
     // ...
     });
 } catch (Exception\MssException $e) {
-    var_dump($e->getMessage()); // => string(50) "Invalid value '2016-04-08' for parameter 'arrival'"
-    var_dump($e->getCode()); // => int(32)
-    die();
-}
+    $e->getMessage(); // => string(50) "Invalid value '2016-04-08' for parameter 'arrival'"
+    $e->getCode(); // => int(400)
+    $e->getErrorCode(); // => int(32)
+}s
 ```
