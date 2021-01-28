@@ -84,5 +84,5 @@ try {
     $e->getMessage(); // => string(50) "Invalid value '2016-04-08' for parameter 'arrival'"
     $e->getCode(); // => int(32)
     $e->getResponse()->getStatusCode(); // => int(400)
-}s
+}
 ```
