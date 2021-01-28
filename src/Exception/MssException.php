@@ -7,12 +7,7 @@ use Psr\Http\Message\ResponseInterface;
 use MssPhp\Bitmask\ErrorCodes;
 
 final class MssException extends HttpException
-{
-    /**
-     * @var int
-     */
-    private $errorCode;
-    
+{   
     public function __construct(
         $message,
         RequestInterface $request,
@@ -22,12 +17,7 @@ final class MssException extends HttpException
     ) {
         $statusCode = self::mapErrorToStatusCode($code);
         parent::__construct($message, $request, $response->withStatus($statusCode), $previous);
-        $this->errorCode = $code;
-    }
-
-    public function getErrorCode()
-    {
-        return $this->errorCode;
+        $this->code = $code;
     }
 
     private static function mapErrorToStatusCode(int $code)

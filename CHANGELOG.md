@@ -7,15 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [2.2.0] - 2021-01-28
-
-### Added
-
-- Add `getErrorCode()` method to `MssException`. [Supported error codes](https://github.com/HGV/mss-php/blob/992225d2ccbaa144464a80572075c29f3d7a470d/src/Bitmask/ErrorCodes.php).
+## [2.1.2] - 2021-01-28
 
 ### Fixed
 
 - Fix a bug where `MssException` returned 2xx status codes in the `Response` object.
+- Fix a bug where `MssException@getCode()` returned the HTTP status code instead of the [Mss Error Code](https://github.com/HGV/mss-php/blob/992225d2ccbaa144464a80572075c29f3d7a470d/src/Bitmask/ErrorCodes.php).
 
 ## [2.1.1] - 2021-01-19
 
