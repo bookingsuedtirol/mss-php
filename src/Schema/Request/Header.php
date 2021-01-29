@@ -19,4 +19,9 @@ class Header {
      * @Type("MssPhp\Schema\Request\Paging")
      */
     public $paging;
+
+    /**
+     * @Type("string")
+     */
+    public $result_id;
 }
