@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.2.0] - 2021-01-29
+
+### Added
+
+- Add `result_id` property to `Schema\Request\Header`.
+
 ## [2.1.2] - 2021-01-28
 
 ### Fixed
@@ -18,7 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Change distance type from integer to double
+- Change distance type from integer to double.
 
 ## [2.1.0] - 2020-12-18
 
