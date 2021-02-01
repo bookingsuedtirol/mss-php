@@ -99,7 +99,7 @@ final class Client
         
         // If result_id has a value, the request node must be empty
         if ($xmlReq->header->result_id) {
-            unset($xmlReq->request->search);
+            $xmlReq->request->search = null;
         }
         
         $reqBody = $this->serializer->serialize($xmlReq, 'xml');
