@@ -132,4 +132,14 @@ class Search {
      * @Type("double")
      */
     public $total_price;
+
+    /**
+     * @Type("DateTime<'Y-m-d'>")
+     */
+    public $arrival;
+
+    /**
+     * @Type("DateTime<'Y-m-d'>")
+     */
+    public $departure;
 }
