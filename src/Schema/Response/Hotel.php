@@ -118,6 +118,21 @@ class Hotel {
     public $available_from;
 
     /**
+     * * @Type("DateTime<'Y-m-d H:i:s'>")
+     */
+    public $prices_changed_at;
+
+    /**
+     * * @Type("DateTime<'Y-m-d H:i:s'>")
+     */
+    public $availability_changed_at;
+
+    /**
+     * @Type("DateTime<'H:i'>")
+     */
+    public $bookable_until;
+
+    /**
      * @Type("MssPhp\Schema\Response\Pictures")
      */
     public $gallery;
