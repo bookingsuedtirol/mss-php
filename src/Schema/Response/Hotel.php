@@ -113,6 +113,11 @@ class Hotel {
     public $pictures;
 
     /**
+     * @Type("DateTime<'Y-m-d'>")
+     */
+    public $available_from;
+
+    /**
      * @Type("MssPhp\Schema\Response\Pictures")
      */
     public $gallery;
