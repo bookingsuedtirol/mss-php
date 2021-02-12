@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.4.0] - 2021-02-12
+
+### Added
+
+- Add the follwing properties to `Schema\Response\Hotel`
+  - `available_from`
+  - `prices_changed_at`
+  - `availability_changed_at`
+  - `bookable_until`
+
 ## [2.3.0] - 2021-02-09
 
 ### Added
