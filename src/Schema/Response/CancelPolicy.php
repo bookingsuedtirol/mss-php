@@ -39,7 +39,7 @@ class CancelPolicy {
 
     public function setDescription($description)
     {
-        $this->description = nl2br($description);
+        $this->description = nl2br(trim($description));
     }
 
     /**
