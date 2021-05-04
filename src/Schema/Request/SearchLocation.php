@@ -9,13 +9,13 @@ class SearchLocation
 {
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="location")
+     * @XmlList(inline = true, entry = "location")
      */
     public $location;
 
     /**
      * @Type("array<string>")
-     * @XmlList(inline = true, entry="location_lts")
+     * @XmlList(inline = true, entry = "location_lts")
      */
     public $location_lts;
 }

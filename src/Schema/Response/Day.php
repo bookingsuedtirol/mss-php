@@ -3,6 +3,7 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\XmlList;
 
 class Day
 {
@@ -17,7 +18,8 @@ class Day
     public $free;
 
     /**
-     * @Type("MssPhp\Schema\Response\Restrictions")
+     * @Type("array<MssPhp\Schema\Response\Restriction>")
+     * @XmlList(entry = "restriction")
      */
     public $restrictions;
 }

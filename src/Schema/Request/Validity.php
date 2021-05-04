@@ -34,7 +34,7 @@ class Validity
 
     /**
      * @Type("array<MssPhp\Schema\Request\Room>")
-     * @XmlList(inline = true, entry="room")
+     * @XmlList(inline = true, entry = "room")
      */
     public $room;
 }

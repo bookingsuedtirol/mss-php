@@ -24,7 +24,7 @@ class Search
 
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="id")
+     * @XmlList(inline = true, entry = "id")
      */
     public $id;
 
@@ -70,7 +70,7 @@ class Search
 
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="in")
+     * @XmlList(inline = true, entry = "in")
      */
     public $in;
 

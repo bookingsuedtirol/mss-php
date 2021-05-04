@@ -24,7 +24,7 @@ class SearchPriceList
 
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="room_id")
+     * @XmlList(inline = true, entry = "room_id")
      */
     public $room_id;
 

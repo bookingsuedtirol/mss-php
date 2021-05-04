@@ -3,6 +3,7 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\XmlList;
 
 class SeoText
 {
@@ -232,7 +233,8 @@ class SeoText
     public $metadesc_dan;
 
     /**
-     * @Type("MssPhp\Schema\Response\Pictures")
+     * @Type("array<MssPhp\Schema\Response\Picture>")
+     * @XmlList(entry = "picture")
      */
     public $pictures;
 }

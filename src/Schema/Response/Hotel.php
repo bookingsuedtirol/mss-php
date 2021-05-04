@@ -105,12 +105,14 @@ class Hotel
     public $matching;
 
     /**
-     * @Type("MssPhp\Schema\Response\Pictures")
+     * @Type("array<MssPhp\Schema\Response\Picture>")
+     * @XmlList(entry = "picture")
      */
     public $logo;
 
     /**
-     * @Type("MssPhp\Schema\Response\Pictures")
+     * @Type("array<MssPhp\Schema\Response\Picture>")
+     * @XmlList(entry = "picture")
      */
     public $pictures;
 
@@ -135,13 +137,14 @@ class Hotel
     public $bookable_until;
 
     /**
-     * @Type("MssPhp\Schema\Response\Pictures")
+     * @Type("array<MssPhp\Schema\Response\Picture>")
+     * @XmlList(entry = "picture")
      */
     public $gallery;
 
     /**
      * @Type("array<MssPhp\Schema\Response\Feature>")
-     * @XmlList(entry="feature")
+     * @XmlList(entry = "feature")
      */
     public $features_view;
 
@@ -226,7 +229,8 @@ class Hotel
     public $child_cnt_max;
 
     /**
-     * @Type("MssPhp\Schema\Response\Ratings")
+     * @Type("array<MssPhp\Schema\Response\Rating>")
+     * @XmlList(entry = "rating")
      */
     public $ratings;
 

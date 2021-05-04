@@ -24,7 +24,8 @@ class Form
     public $form_methods;
 
     /**
-     * @Type("MssPhp\Schema\Response\FormFields")
+     * @Type("array<MssPhp\Schema\Response\Field>")
+     * @XmlList(entry = "field")
      */
     public $form_fields;
 }

@@ -3,6 +3,7 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\XmlList;
 
 class Channel
 {
@@ -17,22 +18,26 @@ class Channel
     public $offer_id;
 
     /**
-     * @Type("MssPhp\Schema\Response\OfferDescription")
+     * @Type("array<MssPhp\Schema\Response\Offer>")
+     * @XmlList(entry = "offer")
      */
     public $offer_description;
 
     /**
-     * @Type("MssPhp\Schema\Response\RoomPrices")
+     * @Type("array<MssPhp\Schema\Response\RoomPrice>")
+     * @XmlList(entry = "price")
      */
     public $room_price;
 
     /**
-     * @Type("MssPhp\Schema\Response\RoomDescription")
+     * @Type("array<MssPhp\Schema\Response\Room>")
+     * @XmlList(entry = "room")
      */
     public $room_description;
 
     /**
-     * @Type("MssPhp\Schema\Response\ServicePrice")
+     * @Type("array<MssPhp\Schema\Response\Price>")
+     * @XmlList(entry = "price")
      */
     public $service_price;
 
@@ -42,17 +47,20 @@ class Channel
     public $from_price;
 
     /**
-     * @Type("MssPhp\Schema\Response\BasePrice")
+     * @Type("array<MssPhp\Schema\Response\RoomPrice>")
+     * @XmlList(entry = "price")
      */
     public $base_price;
 
     /**
-     * @Type("MssPhp\Schema\Response\CancelPolicies")
+     * @Type("array<MssPhp\Schema\Response\CancelPolicy>")
+     * @XmlList(entry = "cancel_policy")
      */
     public $cancel_policies;
 
     /**
-     * @Type("MssPhp\Schema\Response\PaymentTerms")
+     * @Type("array<MssPhp\Schema\Response\PaymentTerm>")
+     * @XmlList(entry = "payment_term")
      */
     public $payment_terms;
 

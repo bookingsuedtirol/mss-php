@@ -14,7 +14,7 @@ class SearchHotel
 
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="type")
+     * @XmlList(inline = true, entry = "type")
      */
     public $type;
 

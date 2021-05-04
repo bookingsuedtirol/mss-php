@@ -3,6 +3,7 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\XmlList;
 
 class Special
 {
@@ -127,32 +128,38 @@ class Special
     public $description;
 
     /**
-     * @Type("MssPhp\Schema\Response\Hotels")
+     * @Type("array<MssPhp\Schema\Response\Hotel>")
+     * @XmlList(entry = "hotel")
      */
     public $hotels;
 
     /**
-     * @Type("MssPhp\Schema\Response\Seasons")
+     * @Type("array<MssPhp\Schema\Response\Season>")
+     * @XmlList(entry = "season")
      */
     public $seasons;
 
     /**
-     * @Type("MssPhp\Schema\Response\Services")
+     * @Type("array<integer>")
+     * @XmlList(entry = "service")
      */
     public $services;
 
     /**
-     * @Type("MssPhp\Schema\Response\Inclusive")
+     * @Type("array<MssPhp\Schema\Response\Price>")
+     * @XmlList(entry = "price")
      */
     public $inclusive;
 
     /**
-     * @Type("MssPhp\Schema\Response\Pictures")
+     * @Type("array<MssPhp\Schema\Response\Picture>")
+     * @XmlList(entry = "picture")
      */
     public $pictures;
 
     /**
-     * @Type("MssPhp\Schema\Response\Themes")
+     * @Type("array<MssPhp\Schema\Response\Theme>")
+     * @XmlList(entry = "theme")
      */
     public $themes;
 }

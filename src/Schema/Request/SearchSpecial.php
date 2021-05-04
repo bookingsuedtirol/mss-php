@@ -9,7 +9,7 @@ class SearchSpecial
 {
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="offer_id")
+     * @XmlList(inline = true, entry = "offer_id")
      */
     public $offer_id;
 
@@ -25,19 +25,19 @@ class SearchSpecial
 
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="theme")
+     * @XmlList(inline = true, entry = "theme")
      */
     public $theme;
 
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="poi_id")
+     * @XmlList(inline = true, entry = "poi_id")
      */
     public $poi_id;
 
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="poi_cat")
+     * @XmlList(inline = true, entry = "poi_cat")
      */
     public $poi_cat;
 

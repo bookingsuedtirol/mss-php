@@ -3,6 +3,7 @@
 namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\XmlList;
 
 class Offer
 {
@@ -52,12 +53,14 @@ class Offer
     public $description;
 
     /**
-     * @Type("MssPhp\Schema\Response\Pictures")
+     * @Type("array<MssPhp\Schema\Response\Picture>")
+     * @XmlList(entry = "picture")
      */
     public $pictures;
 
     /**
-     * @Type("MssPhp\Schema\Response\Themes")
+     * @Type("array<MssPhp\Schema\Response\Theme>")
+     * @XmlList(entry = "theme")
      */
     public $themes;
 }

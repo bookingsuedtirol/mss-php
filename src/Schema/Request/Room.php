@@ -34,7 +34,7 @@ class Room
 
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="person")
+     * @XmlList(inline = true, entry = "person")
      */
     public $person;
 }

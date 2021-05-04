@@ -19,13 +19,13 @@ class SearchAvailability
 
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="offer_id")
+     * @XmlList(inline = true, entry = "offer_id")
      */
     public $offer_id;
 
     /**
      * @Type("array<integer>")
-     * @XmlList(inline = true, entry="room_id")
+     * @XmlList(inline = true, entry = "room_id")
      */
     public $room_id;
 }

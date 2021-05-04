@@ -29,7 +29,7 @@ class SearchOffer
 
     /**
      * @Type("array<string>")
-     * @XmlList(inline = true, entry="channel_id")
+     * @XmlList(inline = true, entry = "channel_id")
      */
     public $channel_id;
 

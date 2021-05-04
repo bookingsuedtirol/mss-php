@@ -4,6 +4,7 @@ namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\AccessType;
 use JMS\Serializer\Annotation\Type;
+use JMS\Serializer\Annotation\XmlList;
 
 class CancelPolicy
 {
@@ -23,7 +24,8 @@ class CancelPolicy
     public $refundable_until;
 
     /**
-     * @Type("MssPhp\Schema\Response\Penalties")
+     * @Type("array<MssPhp\Schema\Response\Penalty>")
+     * @XmlList(entry = "penalty")
      */
     public $penalties;
 

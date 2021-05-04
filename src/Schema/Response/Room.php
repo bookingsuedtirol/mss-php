@@ -86,7 +86,7 @@ class Room
 
     /**
      * @Type("array<MssPhp\Schema\Response\Feature>")
-     * @XmlList(entry="feature")
+     * @XmlList(entry = "feature")
      */
     public $features_view;
 
@@ -96,7 +96,8 @@ class Room
     public $room_total;
 
     /**
-     * @Type("MssPhp\Schema\Response\Pictures")
+     * @Type("array<MssPhp\Schema\Response\Picture>")
+     * @XmlList(entry = "picture")
      */
     public $pictures;
 
@@ -133,12 +134,14 @@ class Room
     public $room_numbers;
 
     /**
-     * @Type("MssPhp\Schema\Response\RoomDetails")
+     * @Type("array<MssPhp\Schema\Response\RoomDetail>")
+     * @XmlList(entry = "room_detail")
      */
     public $room_details;
 
     /**
-     * @Type("MssPhp\Schema\Response\Days")
+     * @Type("array<MssPhp\Schema\Response\Day>")
+     * @XmlList(entry = "day")
      */
     public $days;
 

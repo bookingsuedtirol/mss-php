@@ -9,7 +9,7 @@ class Pos
 {
     /**
      * @Type("array<string>")
-     * @XmlList(inline = true, entry="id_pos")
+     * @XmlList(inline = true, entry = "id_pos")
      */
     public $id_pos;
 }
