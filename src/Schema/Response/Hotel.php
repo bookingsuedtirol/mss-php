@@ -129,7 +129,7 @@ class Hotel
     public $availability_changed_at;
 
     /**
-     * @Type("DateTime<'H:i'>")
+     * @Type("string")
      */
     public $bookable_until;
 

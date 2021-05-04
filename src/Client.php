@@ -9,9 +9,6 @@ use MssPhp\Exception;
 use MssPhp\Handler;
 use GuzzleHttp\Psr7;
 use JMS\Serializer\SerializerBuilder;
-use JMS\Serializer\Naming\CamelCaseNamingStrategy;
-use JMS\Serializer\Naming\SerializedNameAnnotationStrategy;
-use JMS\Serializer\XmlSerializationVisitor;
 use JMS\Serializer\Handler\HandlerRegistry;
 use Psr\Http\Client\ClientInterface;
 use Http\Discovery\Psr18ClientDiscovery;
@@ -43,23 +40,7 @@ final class Client
     {
         $this->setConfig($config);
         $this->httpClient = $this->createConfiguredClient();
-        $serializer = SerializerBuilder::create();
-        $serializer->addDefaultSerializationVisitors();
-        $serializer->addDefaultDeserializationVisitors();
-        // Add custom handlers
-        $serializer->configureHandlers(function (HandlerRegistry $registry) {
-            $registry->registerSubscribingHandler(
-                new Handler\NullableDateHandler()
-            );
-        });
-        // Configure XML serializer to not format xml output
-        $namingStrategy = new SerializedNameAnnotationStrategy(
-            new CamelCaseNamingStrategy()
-        );
-        $xmlVisitor = new XmlSerializationVisitor($namingStrategy);
-        $xmlVisitor->setFormatOutput(false);
-        $serializer->setSerializationVisitor("xml", $xmlVisitor);
-        $this->serializer = $serializer->build();
+        $this->serializer = SerializerBuilder::create()->build();
     }
 
     public function setConfig(array $config)
@@ -122,9 +103,9 @@ final class Client
         $resBody = $response->getBody();
 
         $res = $this->serializer->deserialize($resBody, $type, "xml");
-        $res = json_decode($this->serializer->serialize($res, "json"), true);
-        $error = $res["header"]["error"];
-        $errorCode = (int) $error["code"];
+
+        $error = $res->header->error;
+        $errorCode = (int) $error->code;
 
         if ($errorCode > 0) {
             throw new Exception\MssException(
