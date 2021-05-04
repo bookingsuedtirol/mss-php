@@ -4,7 +4,8 @@ namespace MssPhp\Schema\Request;
 
 use JMS\Serializer\Annotation\Type;
 
-class Header {
+class Header
+{
     /**
      * @Type("MssPhp\Schema\Request\Credentials")
      */
@@ -13,7 +14,7 @@ class Header {
     /**
      * @Type("string")
      */
-    public $method = 'getHotelList';
+    public $method = "getHotelList";
 
     /**
      * @Type("MssPhp\Schema\Request\Paging")

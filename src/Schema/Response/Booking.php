@@ -6,7 +6,8 @@ use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
 use JMS\Serializer\Annotation\AccessType;
 
-class Booking {
+class Booking
+{
     /**
      * @Type("integer")
      */

@@ -6,7 +6,8 @@ use JMS\Serializer\Annotation\Inline;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
 
-class RoomDetails {
+class RoomDetails
+{
     /**
      * @Inline
      * @Type("array<MssPhp\Schema\Response\RoomDetail>")

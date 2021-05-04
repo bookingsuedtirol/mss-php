@@ -4,7 +4,8 @@ namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
 
-class Day {
+class Day
+{
     /**
      * @Type("DateTime<'Y-m-d'>")
      */

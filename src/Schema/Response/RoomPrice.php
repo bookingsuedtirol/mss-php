@@ -4,7 +4,8 @@ namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
 
-class RoomPrice {
+class RoomPrice
+{
     /**
      * @Type("integer")
      */
@@ -21,8 +22,8 @@ class RoomPrice {
     public $offer_id;
 
     /**
-    * @Type("MssPhp\Schema\Response\PriceDetails")
-    */
+     * @Type("MssPhp\Schema\Response\PriceDetails")
+     */
     public $price_details;
 
     /**
@@ -31,7 +32,7 @@ class RoomPrice {
     public $price_total;
 
     /**
-    * @Type("MssPhp\Schema\Response\Price")
+     * @Type("MssPhp\Schema\Response\Price")
      */
     public $price_inclusive;
 

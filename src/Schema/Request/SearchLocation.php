@@ -5,7 +5,8 @@ namespace MssPhp\Schema\Request;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
 
-class SearchLocation {
+class SearchLocation
+{
     /**
      * @Type("array<integer>")
      * @XmlList(inline = true, entry="location")
@@ -13,8 +14,8 @@ class SearchLocation {
     public $location;
 
     /**
-    * @Type("array<string>")
-    * @XmlList(inline = true, entry="location_lts")
+     * @Type("array<string>")
+     * @XmlList(inline = true, entry="location_lts")
      */
     public $location_lts;
 }

@@ -5,11 +5,12 @@ namespace MssPhp\Schema\Request;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
 
-class Search {
+class Search
+{
     /**
      * @Type("string")
      */
-    public $lang = 'de';
+    public $lang = "de";
 
     /**
      * @Type("string")
@@ -88,7 +89,7 @@ class Search {
      */
     public $booking_id;
 
-        /**
+    /**
      * @Type("string")
      */
     public $guest_email;

@@ -4,7 +4,8 @@ namespace MssPhp\Schema\Request;
 
 use JMS\Serializer\Annotation\Type;
 
-class SearchLts {
+class SearchLts
+{
     /**
      * @Type("integer")
      */
@@ -19,5 +20,4 @@ class SearchLts {
      * @Type("integer")
      */
     public $A0Rep;
-
 }

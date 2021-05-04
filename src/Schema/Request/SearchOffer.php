@@ -5,7 +5,8 @@ namespace MssPhp\Schema\Request;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
 
-class SearchOffer {
+class SearchOffer
+{
     /**
      * @Type("DateTime<'Y-m-d'>")
      */
@@ -35,7 +36,7 @@ class SearchOffer {
     /**
      * @Type("array<MssPhp\Schema\Request\Room>")
      * @XmlList(inline = true, entry = "room")
-    */
+     */
     public $room;
 
     /**

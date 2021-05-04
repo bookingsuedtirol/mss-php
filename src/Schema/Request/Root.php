@@ -8,11 +8,12 @@ use JMS\Serializer\Annotation\XmlRoot;
 /**
  * @XmlRoot("root")
  */
-class Root {
+class Root
+{
     /**
      * @Type("string")
      */
-    public $version = '2.0';
+    public $version = "2.0";
 
     /**
      * @Type("MssPhp\Schema\Request\Header")

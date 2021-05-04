@@ -4,7 +4,8 @@ namespace MssPhp\Schema\Request;
 
 use JMS\Serializer\Annotation\Type;
 
-class Data {
+class Data
+{
     /**
      * @Type("MssPhp\Schema\Request\Guest")
      */

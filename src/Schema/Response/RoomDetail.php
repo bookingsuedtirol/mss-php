@@ -5,7 +5,8 @@ namespace MssPhp\Schema\Response;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\AccessType;
 
-class RoomDetail {
+class RoomDetail
+{
     /**
      * @Type("string")
      */

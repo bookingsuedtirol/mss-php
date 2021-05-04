@@ -4,7 +4,8 @@ namespace MssPhp\Schema\Request;
 
 use JMS\Serializer\Annotation\Type;
 
-class ExtraPrice {
+class ExtraPrice
+{
     /**
      * @Type("integer")
      */

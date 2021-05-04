@@ -6,7 +6,8 @@ use JMS\Serializer\Annotation\Inline;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
 
-class Seasons {
+class Seasons
+{
     /**
      * @Inline
      * @Type("array<MssPhp\Schema\Response\Season>")

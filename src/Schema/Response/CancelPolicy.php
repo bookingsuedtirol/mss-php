@@ -5,7 +5,8 @@ namespace MssPhp\Schema\Response;
 use JMS\Serializer\Annotation\AccessType;
 use JMS\Serializer\Annotation\Type;
 
-class CancelPolicy {
+class CancelPolicy
+{
     /**
      * @Type("integer")
      */

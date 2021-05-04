@@ -4,7 +4,8 @@ namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
 
-class Source {
+class Source
+{
     /**
      * @Type("integer")
      */

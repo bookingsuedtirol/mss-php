@@ -4,7 +4,8 @@ namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
 
-class Price {
+class Price
+{
     /**
      * @Type("integer")
      */
@@ -41,8 +42,8 @@ class Price {
     public $supplement;
 
     /**
-    * @Type("integer")
-    */
+     * @Type("integer")
+     */
     public $price_supplement;
 
     /**
@@ -91,7 +92,7 @@ class Price {
     public $unit;
 
     /**
-    * @Type("MssPhp\Schema\Response\Pictures")
+     * @Type("MssPhp\Schema\Response\Pictures")
      */
     public $pictures;
 }

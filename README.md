@@ -38,30 +38,30 @@ composer require hgv/mss-php kriswallsmith/buzz nyholm/psr7
 
 ```php
 <?php
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . "/vendor/autoload.php";
 
 use Crutches\Bitmask;
 use MssPhp\Client;
 use MssPhp\Bitmask\HotelDetails;
 
 $client = new Client([
-    'user' => 'username',
-    'password' => 'password',
-    'source' => 'source'
+    "user" => "username",
+    "password" => "password",
+    "source" => "source"
 ]);
 
 $res = $client->request(function($req) {
-    $req->header->method = 'getHotelList';
-    $req->request->search->id = ['11230'];
+    $req->header->method = "getHotelList";
+    $req->request->search->id = ["11230"];
     $req->request->options->hotel_details = (new Bitmask(
         HotelDetails::BASIC_INFO|
         HotelDetails::COORDINATES
     ))->getBitmask();
 });
 
-$hotel = $res['result']['hotel'][0];
-$hotel['name']; // => string(18) "Hotel Lichtenstern"
-$hotel['stars']; // => float(3)
+$hotel = $res["result"]["hotel"][0];
+$hotel["name"]; // => string(18) "Hotel Lichtenstern"
+$hotel["stars"]; // => float(3)
 $hotel["geolocation"]["latitude"]; // => float(46.53063158978)
 ```
 

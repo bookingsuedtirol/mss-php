@@ -8,7 +8,8 @@ use JMS\Serializer\Annotation\XmlRoot;
 /**
  * @XmlRoot("root")
  */
-class Root {
+class Root
+{
     /**
      * @Type("MssPhp\Schema\Response\Header")
      */

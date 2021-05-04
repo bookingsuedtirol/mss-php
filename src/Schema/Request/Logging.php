@@ -4,7 +4,8 @@ namespace MssPhp\Schema\Request;
 
 use JMS\Serializer\Annotation\Type;
 
-class Logging {
+class Logging
+{
     /**
      * @Type("string")
      */
