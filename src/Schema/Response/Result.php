@@ -50,13 +50,13 @@ class Result {
      */
     public $seo_text;
 
-     /**
+    /**
      * @Type("array<MssPhp\Schema\Response\Location>")
      * @XmlList(inline = true, entry = "location")
      */
     public $location;
 
-     /**
+    /**
      * @Type("array<MssPhp\Schema\Response\ThemeListItem>")
      * @XmlList(inline = true, entry = "theme")
      */

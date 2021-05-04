@@ -100,7 +100,7 @@ class Special {
      */
     public $child_age_max;
 
-     /**
+    /**
      * @Type("integer")
      */
     public $adult_age_min;

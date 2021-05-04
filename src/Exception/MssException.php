@@ -7,7 +7,7 @@ use Psr\Http\Message\ResponseInterface;
 use MssPhp\Bitmask\ErrorCodes;
 
 final class MssException extends HttpException
-{   
+{
     public function __construct(
         $message,
         RequestInterface $request,
@@ -28,7 +28,7 @@ final class MssException extends HttpException
             case ErrorCodes::INVALID_MISSING_PARAMETER:
             case ErrorCodes::BOOKING_VALIDATION_FAILED:
                 return 400;
-            case ErrorCodes::AUTHENTICATION_ERROR: 
+            case ErrorCodes::AUTHENTICATION_ERROR:
                 return 401;
             case ErrorCodes::PERMISSIONS_DENIED:
                 return 403;

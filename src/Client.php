@@ -96,14 +96,14 @@ final class Client
     {
         $xmlReq = $this->createNewXmlRequest();
         $setup($xmlReq);
-        
+
         // If result_id has a value, the request node must be empty
         if ($xmlReq->header->result_id) {
             $xmlReq->request->search = null;
         }
-        
+
         $reqBody = $this->serializer->serialize($xmlReq, 'xml');
-        
+
         $stream = Psr17FactoryDiscovery::findStreamFactory()
             ->createStream($reqBody);
 

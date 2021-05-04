@@ -21,7 +21,7 @@ class SearchAvailability {
     * @XmlList(inline = true, entry="offer_id")
      */
     public $offer_id;
-    
+
     /**
     * @Type("array<integer>")
     * @XmlList(inline = true, entry="room_id")

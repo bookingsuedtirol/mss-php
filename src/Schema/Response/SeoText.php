@@ -14,12 +14,12 @@ class SeoText {
      * @Type("string")
      */
     public $typ;
-    
+
     /**
      * @Type("integer")
      */
     public $external_id;
-    
+
     /**
      * @Type("string")
      */
@@ -49,7 +49,7 @@ class SeoText {
      * @Type("string")
      */
     public $metadesc_deu;
-    
+
     /**
      * @Type("string")
      */
@@ -79,7 +79,7 @@ class SeoText {
      * @Type("string")
      */
     public $metadesc_ita;
-    
+
     /**
      * @Type("string")
      */
@@ -109,7 +109,7 @@ class SeoText {
      * @Type("string")
      */
     public $metadesc_eng;
-    
+
     /**
      * @Type("string")
      */
@@ -139,7 +139,7 @@ class SeoText {
      * @Type("string")
      */
     public $metadesc_spa;
-    
+
     /**
      * @Type("string")
      */
@@ -169,7 +169,7 @@ class SeoText {
      * @Type("string")
      */
     public $metadesc_fra;
-    
+
     /**
      * @Type("string")
      */
@@ -199,7 +199,7 @@ class SeoText {
      * @Type("string")
      */
     public $metadesc_rus;
-    
+
     /**
      * @Type("string")
      */
