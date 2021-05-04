@@ -4,6 +4,7 @@ namespace MssPhp\Schema\Response;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\AccessType;
+use JMS\Serializer\Annotation\XmlList;
 
 class Hotel
 {
@@ -139,7 +140,8 @@ class Hotel
     public $gallery;
 
     /**
-     * @Type("MssPhp\Schema\Response\FeaturesView")
+     * @Type("array<MssPhp\Schema\Response\Feature>")
+     * @XmlList(entry="feature")
      */
     public $features_view;
 

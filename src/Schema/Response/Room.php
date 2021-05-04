@@ -85,7 +85,8 @@ class Room
     public $features;
 
     /**
-     * @Type("MssPhp\Schema\Response\FeaturesView")
+     * @Type("array<MssPhp\Schema\Response\Feature>")
+     * @XmlList(entry="feature")
      */
     public $features_view;
 
