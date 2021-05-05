@@ -26,7 +26,9 @@ class Root
      */
     public function toArrayWithoutNull()
     {
-        $noNull = fn($value) => $value !== null;
+        $noNull = function ($value) {
+            return $value !== null;
+        };
 
         $toArray = function ($value) use (&$toArray, &$noNull) {
             return is_scalar($value)
