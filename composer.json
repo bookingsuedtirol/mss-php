@@ -22,15 +22,24 @@
         "php-http/client-common": "^2.1",
         "php-http/discovery": "^1.7"
     },
+    "scripts": {
+        "test": "phpunit"
+    },
     "autoload": {
         "psr-4": {
             "MssPhp\\": "src/"
         }
     },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
     "require-dev": {
         "glynnforrest/crutches": "^0.4",
         "vlucas/phpdotenv": "^5.1",
         "nyholm/psr7": "^1.0",
-        "kriswallsmith/buzz": "^1.1"
+        "kriswallsmith/buzz": "^1.1",
+        "phpunit/phpunit": "^9.5"
     }
 }

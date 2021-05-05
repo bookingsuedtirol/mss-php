@@ -86,3 +86,7 @@ try {
     $e->getResponse()->getStatusCode(); // => int(400)
 }
 ```
+
+## Unit tests
+
+Run `composer test`
