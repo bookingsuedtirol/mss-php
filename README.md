@@ -86,6 +86,3 @@ try {
     $e->getResponse()->getStatusCode(); // => int(400)
 }
 ```
-## TODO
-
-- Remove JSON serialization/deserialization (-> omit null properties, DateTime to string)
