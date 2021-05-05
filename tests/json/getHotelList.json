@@ -1,0 +1,367 @@
+{
+    "header": {
+        "error": {
+            "code": 0,
+            "message": "OK"
+        },
+        "result_id": "7cd8944806dcc89fdedd78396cb3e924",
+        "source": "widget",
+        "paging": {
+            "count": 1,
+            "total": 1
+        },
+        "time": "15.20 ms"
+    },
+    "result": {
+        "hotel": [
+            {
+                "id": 9002,
+                "id_lts": "",
+                "bookable": 1,
+                "name": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                "type": 1,
+                "stars": 0,
+                "address": {
+                    "street": "Schlachthofstrasse 59",
+                    "zip": "39100",
+                    "city": "Bozen",
+                    "country": "IT",
+                    "url_streetview": "https://www.google.it/maps/@46.4939894,11.3602731,3a,75y,256.85h,111.59t/data=!3m6!1e1!3m4!1sfrXjia6EPsMJ129dhzXFUA!2e0!7i13312!8i6656!6m1!1e1"
+                },
+                "themes": 7,
+                "features": 17513741,
+                "location": {
+                    "id_city": 232,
+                    "id_community": 118,
+                    "id_region": 100,
+                    "id_area": 1
+                },
+                "location_name": {
+                    "name_city": "Haslach",
+                    "name_community": "Bozen",
+                    "name_region": "S\u00fcdtirols S\u00fcden",
+                    "name_area": "S\u00fcdtirol"
+                },
+                "geolocation": {
+                    "latitude": 46.554728888885,
+                    "longitude": 11.436424255371,
+                    "altitude": 0,
+                    "distance": 0
+                },
+                "contact": {
+                    "email": "info@bookingsuedtirol.com",
+                    "phone": "0471 317 840",
+                    "fax": "0471317701",
+                    "web": "http://www.hotelhgv.it"
+                },
+                "headline": "<p>Dies ist ein TESTBETRIEB! Buchungen f&uuml;r diesen Betrieb sind NICHT g&uuml;ltig!</p>\r\n",
+                "description": "<p><strong>Dies ist ein TESTBETRIEB! Buchungen f&uuml;r diesen Betrieb sind NICHT g&uuml;ltig!</strong></p>\r\n\r\n<p>Weit hinten, hinter den Wortbergen, fern der L&auml;nder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der K&uuml;ste des Semantik, eines gro&szlig;en Sprachozeans. Ein kleines B&auml;chlein namens Duden flie&szlig;t durch ihren Ort und versorgt sie mit den n&ouml;tigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allm&auml;chtigen Interpunktion werden die Blindtexte beherrscht &ndash; ein geradezu unorthographisches Leben. Eines Tages aber beschlo&szlig; eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der gro&szlig;e Oxmox riet ihr davon ab, da es dort wimmele von b&ouml;sen Kommata, wilden Fragezeichen und hinterh&auml;ltigen Semikoli, doch das Blindtextchen lie&szlig; sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den G&uuml;rtel und machte sich auf den Weg. Als es die ersten H&uuml;gel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zur&uuml;ck auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Stra&szlig;e, der Zeilengasse. Wehm&uuml;tig lief ihm eine rhetorische Frage &uuml;ber die Wange, dann setzte es seinen Weg fort.</p>\r\n",
+                "hotel_payment": {
+                    "methods": 200
+                },
+                "matching": [],
+                "logo": [
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=54f0f0c4e34b1735cbfe837020b2378a.png",
+                        "time": 0,
+                        "title": "",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1920,
+                        "height": 1600
+                    }
+                ],
+                "pictures": [
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=f5a1255086ff198a34cdd8051fefbd22.jpg",
+                        "time": 0,
+                        "title": "Sommer",
+                        "copyright": "Unsplash",
+                        "width": 1600,
+                        "height": 1000
+                    }
+                ],
+                "available_from": "2021-05-05",
+                "prices_changed_at": "2021-05-01 01:00:21",
+                "availability_changed_at": "2021-05-05 00:15:08",
+                "gallery": [
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=91e853f24b8747933be3a20c111a0d6c.jpg",
+                        "time": 0,
+                        "title": "See",
+                        "copyright": "Unsplash",
+                        "width": 1600,
+                        "height": 1066
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=f627bea8386aaca6cdd4a408f23c3fac.jpg",
+                        "time": 0,
+                        "title": "",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1600,
+                        "height": 1066
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=58433236e3716974b7b3922e3fb3726a.jpg",
+                        "time": 0,
+                        "title": "",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1600,
+                        "height": 1067
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=65dc9c2e7d349c9758afa12e1f720178.jpg",
+                        "time": 0,
+                        "title": "Kaffee",
+                        "copyright": "Unsplash",
+                        "width": 1600,
+                        "height": 1012
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=6d89a11bc6ffe71bc8e834cfc45935ed.jpg",
+                        "time": 0,
+                        "title": "",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1600,
+                        "height": 1181
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=f7e7edaa1fbd305f70f7d6bce3b99fc6.jpg",
+                        "time": 0,
+                        "title": "Croissant",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1600,
+                        "height": 1066
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=be8047222d520cc3d66f0e2b51d1f38b.jpg",
+                        "time": 0,
+                        "title": "",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1600,
+                        "height": 1066
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=45ab5e76aef5ebe0b24ad6eda749ef2e.jpg",
+                        "time": 0,
+                        "title": "",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1600,
+                        "height": 1066
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=7ff582b107461bfc6d707700724db04b.jpg",
+                        "time": 0,
+                        "title": "",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1600,
+                        "height": 1066
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=abc95c84c804f785a59fac7908c75d48.jpg",
+                        "time": 0,
+                        "title": "",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1600,
+                        "height": 1066
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=a659762d2499c11a8f1c58cfced41a08.jpg",
+                        "time": 0,
+                        "title": "",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1600,
+                        "height": 1066
+                    },
+                    {
+                        "url": "https://www.bookingsuedtirol.com/mss/mss_renderimg.php?id=9002&src=86afb879cd555d3dabfe0b1e6dbead44.jpg",
+                        "time": 0,
+                        "title": "",
+                        "copyright": "Testhotel Webseitentool HGV (hotelhgv.it)",
+                        "width": 1600,
+                        "height": 1066
+                    }
+                ],
+                "features_view": [
+                    {
+                        "id": 12,
+                        "title": "Barrierefrei"
+                    },
+                    {
+                        "id": 8,
+                        "title": "Garten"
+                    },
+                    {
+                        "id": 37,
+                        "title": "Raucherraum"
+                    },
+                    {
+                        "id": 39,
+                        "title": "\u00d6ffentliche Bar"
+                    },
+                    {
+                        "id": 21,
+                        "title": "Hausbar"
+                    },
+                    {
+                        "id": 18,
+                        "title": "Restaurant"
+                    },
+                    {
+                        "id": 40,
+                        "title": "Weinkeller"
+                    },
+                    {
+                        "id": 42,
+                        "title": "Spielplatz"
+                    },
+                    {
+                        "id": 10,
+                        "title": "\u00dcberdachter Parkplatz"
+                    },
+                    {
+                        "id": 15,
+                        "title": "Garage"
+                    },
+                    {
+                        "id": 22,
+                        "title": "WLAN"
+                    },
+                    {
+                        "id": 44,
+                        "title": "Internetanschluss im Zimmer/Apartment"
+                    },
+                    {
+                        "id": 52,
+                        "title": "Tennisanlage"
+                    },
+                    {
+                        "id": 19,
+                        "title": "Fitnessraum"
+                    },
+                    {
+                        "id": 9,
+                        "title": "Freibad"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Beautyfarm"
+                    },
+                    {
+                        "id": 60,
+                        "title": "Kurlizenz (Staatliche Lizenz/Abkommen)"
+                    },
+                    {
+                        "id": 62,
+                        "title": "Nat\u00fcrliche, \u00f6rtliche Kurmittel"
+                    },
+                    {
+                        "id": 23,
+                        "title": "Shuttle-Dienst"
+                    },
+                    {
+                        "id": 11,
+                        "title": "Ruhig gelegen"
+                    },
+                    {
+                        "id": 154,
+                        "title": "Schwimmbad (Au\u00dfen-/Innenpool)"
+                    },
+                    {
+                        "id": 155,
+                        "title": "Skishuttle kostenlos"
+                    },
+                    {
+                        "id": 156,
+                        "title": "Barrierefreie Unterkunft"
+                    },
+                    {
+                        "id": 157,
+                        "title": "W-LAN kostenlos"
+                    },
+                    {
+                        "id": 158,
+                        "title": "Saunabenutzung"
+                    },
+                    {
+                        "id": 159,
+                        "title": "1 Flasche Mineralwasser"
+                    },
+                    {
+                        "id": 160,
+                        "title": "Fahrradverleih kostenlos"
+                    },
+                    {
+                        "id": 161,
+                        "title": "Obstteller"
+                    },
+                    {
+                        "id": 162,
+                        "title": "Welcome-Drink"
+                    },
+                    {
+                        "id": 163,
+                        "title": "Parkplatz/Garage"
+                    },
+                    {
+                        "id": 164,
+                        "title": "Kostenlose Kinderbetreuung"
+                    },
+                    {
+                        "id": 165,
+                        "title": "Shuttle-Service (Bahnhof)"
+                    },
+                    {
+                        "id": 166,
+                        "title": "W-LAN"
+                    }
+                ],
+                "lts_data": [],
+                "pos": {
+                    "id_pos": [
+                        "widget",
+                        "hgv_crm",
+                        "sbalance",
+                        "slive",
+                        "src9002",
+                        "598",
+                        "601",
+                        "626"
+                    ]
+                },
+                "price_engine": 0,
+                "language": "de",
+                "check_in": {
+                    "from": "14:00",
+                    "to": "20:00"
+                },
+                "check_out": {
+                    "from": "08:00",
+                    "to": "11:00"
+                },
+                "price_from": 56,
+                "board": 7,
+                "board_tq": 1,
+                "pers_age_min": 0,
+                "child_age_min": 0,
+                "adult_age_min": 18,
+                "child_age_max": 18,
+                "adult_cnt_max": 4,
+                "child_cnt_max": 3,
+                "ratings": [],
+                "source_data": {
+                    "description": "",
+                    "headline": "",
+                    "url": ""
+                },
+                "coupon": {
+                    "provider": 3
+                }
+            }
+        ],
+        "special": [],
+        "source": [],
+        "seo_text": [],
+        "location": [],
+        "theme": []
+    }
+}

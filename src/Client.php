@@ -73,6 +73,15 @@ final class Client
         return new PluginClient($this->config["client"], $plugins);
     }
 
+    public function deserialize(
+        string $xmlString,
+        string $type = Response\Root::class
+    ) {
+        return $this->serializer
+            ->deserialize($xmlString, $type, "xml")
+            ->toArrayWithoutNull();
+    }
+
     /**
      * Makes a request to the MSS Endpoint
      *
@@ -107,9 +116,7 @@ final class Client
         $response = $this->httpClient->sendRequest($request);
         $resBody = $response->getBody();
 
-        $res = $this->serializer
-            ->deserialize($resBody, $type, "xml")
-            ->toArrayWithoutNull();
+        $res = $this->deserialize($resBody, $type);
 
         $error = $res["header"]["error"];
         $errorCode = (int) $error["code"];

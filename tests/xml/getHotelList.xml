@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <header>
+        <error>
+            <code>0</code>
+            <message>OK</message>
+        </error>
+        <result_id>7cd8944806dcc89fdedd78396cb3e924</result_id>
+        <source>widget</source>
+        <paging>
+            <count>1</count>
+            <total>1</total>
+        </paging>
+        <time>15.20 ms</time>
+    </header>
+    <result>
+        <hotel>
+            <id>9002</id>
+            <id_lts/>
+            <bookable>1</bookable>
+            <name>Testhotel Webseitentool HGV (hotelhgv.it)</name>
+            <type>1</type>
+            <stars>0</stars>
+            <language>de</language>
+            <price_engine>0</price_engine>
+            <price_from>56</price_from>
+            <available_from>2021-05-05</available_from>
+            <board>7</board>
+            <board_tq>1</board_tq>
+            <bookable_until/>
+            <prices_changed_at>2021-05-01 01:00:21</prices_changed_at>
+            <availability_changed_at>2021-05-05 00:15:08</availability_changed_at>
+            <pers_age_min>0</pers_age_min>
+            <child_age_min>0</child_age_min>
+            <child_age_max>18</child_age_max>
+            <adult_age_min>18</adult_age_min>
+            <adult_cnt_max>4</adult_cnt_max>
+            <child_cnt_max>3</child_cnt_max>
+            <themes>7</themes>
+            <features>17513741</features>
+            <location>
+                <id_city>232</id_city>
+                <id_community>118</id_community>
+                <id_region>100</id_region>
+                <id_area>1</id_area>
+            </location>
+            <location_name>
+                <name_city>Haslach</name_city>
+                <name_community>Bozen</name_community>
+                <name_region>Südtirols Süden</name_region>
+                <name_area>Südtirol</name_area>
+            </location_name>
+            <geolocation>
+                <latitude>46.554728888885</latitude>
+                <longitude>11.436424255371</longitude>
+                <altitude>0</altitude>
+                <distance>0</distance>
+            </geolocation>
+            <address>
+                <street>Schlachthofstrasse 59</street>
+                <zip>39100</zip>
+                <city>Bozen</city>
+                <country>IT</country>
+                <url_streetview>https://www.google.it/maps/@46.4939894,11.3602731,3a,75y,256.85h,111.59t/data=!3m6!1e1!3m4!1sfrXjia6EPsMJ129dhzXFUA!2e0!7i13312!8i6656!6m1!1e1</url_streetview>
+            </address>
+            <contact>
+                <email>info@bookingsuedtirol.com</email>
+                <phone>0471 317 840</phone>
+                <fax>0471317701</fax>
+                <web>http://www.hotelhgv.it</web>
+            </contact>
+            <check_in>
+                <from>14:00</from>
+                <to>20:00</to>
+                <note>bla bla bla german</note>
+            </check_in>
+            <check_out>
+                <from>08:00</from>
+                <to>11:00</to>
+            </check_out>
+            <coupon>
+                <provider>3</provider>
+            </coupon>
+            <headline>&lt;p&gt;Dies ist ein TESTBETRIEB! Buchungen f&amp;uuml;r diesen Betrieb sind NICHT g&amp;uuml;ltig!&lt;/p&gt;&#13;
+</headline>
+            <description>&lt;p&gt;&lt;strong&gt;Dies ist ein TESTBETRIEB! Buchungen f&amp;uuml;r diesen Betrieb sind NICHT g&amp;uuml;ltig!&lt;/strong&gt;&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;Weit hinten, hinter den Wortbergen, fern der L&amp;auml;nder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der K&amp;uuml;ste des Semantik, eines gro&amp;szlig;en Sprachozeans. Ein kleines B&amp;auml;chlein namens Duden flie&amp;szlig;t durch ihren Ort und versorgt sie mit den n&amp;ouml;tigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allm&amp;auml;chtigen Interpunktion werden die Blindtexte beherrscht &amp;ndash; ein geradezu unorthographisches Leben. Eines Tages aber beschlo&amp;szlig; eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der gro&amp;szlig;e Oxmox riet ihr davon ab, da es dort wimmele von b&amp;ouml;sen Kommata, wilden Fragezeichen und hinterh&amp;auml;ltigen Semikoli, doch das Blindtextchen lie&amp;szlig; sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den G&amp;uuml;rtel und machte sich auf den Weg. Als es die ersten H&amp;uuml;gel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zur&amp;uuml;ck auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Stra&amp;szlig;e, der Zeilengasse. Wehm&amp;uuml;tig lief ihm eine rhetorische Frage &amp;uuml;ber die Wange, dann setzte es seinen Weg fort.&lt;/p&gt;&#13;
+</description>
+            <hotel_payment>
+                <methods>200</methods>
+            </hotel_payment>
+            <matching>
+                <id_gog>0</id_gog>
+            </matching>
+            <lts_data>
+                <A0Ene>0</A0Ene>
+                <A0MTV>0</A0MTV>
+                <A0Rep>0</A0Rep>
+            </lts_data>
+            <source_data>
+                <description/>
+                <headline/>
+                <url/>
+            </source_data>
+            <logo>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=54f0f0c4e34b1735cbfe837020b2378a.png</url>
+                    <time>0</time>
+                    <width>1920</width>
+                    <height>1600</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title/>
+                </picture>
+            </logo>
+            <gallery>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=91e853f24b8747933be3a20c111a0d6c.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1066</height>
+                    <copyright>Unsplash</copyright>
+                    <title>See</title>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=f627bea8386aaca6cdd4a408f23c3fac.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1066</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title/>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=58433236e3716974b7b3922e3fb3726a.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1067</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title/>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=65dc9c2e7d349c9758afa12e1f720178.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1012</height>
+                    <copyright>Unsplash</copyright>
+                    <title>Kaffee</title>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=6d89a11bc6ffe71bc8e834cfc45935ed.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1181</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title/>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=f7e7edaa1fbd305f70f7d6bce3b99fc6.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1066</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title>Croissant</title>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=be8047222d520cc3d66f0e2b51d1f38b.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1066</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title/>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=45ab5e76aef5ebe0b24ad6eda749ef2e.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1066</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title/>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=7ff582b107461bfc6d707700724db04b.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1066</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title/>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=abc95c84c804f785a59fac7908c75d48.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1066</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title/>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=a659762d2499c11a8f1c58cfced41a08.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1066</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title/>
+                </picture>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=86afb879cd555d3dabfe0b1e6dbead44.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1066</height>
+                    <copyright>Testhotel Webseitentool HGV (hotelhgv.it)</copyright>
+                    <title/>
+                </picture>
+            </gallery>
+            <pictures>
+                <picture>
+                    <url>https://www.easymailing.eu/mss/mss_renderimg.php?id=9002&amp;src=f5a1255086ff198a34cdd8051fefbd22.jpg</url>
+                    <time>0</time>
+                    <width>1600</width>
+                    <height>1000</height>
+                    <copyright>Unsplash</copyright>
+                    <title>Sommer</title>
+                </picture>
+            </pictures>
+            <features_view>
+                <feature>
+                    <id>12</id>
+                    <title>Barrierefrei</title>
+                </feature>
+                <feature>
+                    <id>8</id>
+                    <title>Garten</title>
+                </feature>
+                <feature>
+                    <id>37</id>
+                    <title>Raucherraum</title>
+                </feature>
+                <feature>
+                    <id>39</id>
+                    <title>Öffentliche Bar</title>
+                </feature>
+                <feature>
+                    <id>21</id>
+                    <title>Hausbar</title>
+                </feature>
+                <feature>
+                    <id>18</id>
+                    <title>Restaurant</title>
+                </feature>
+                <feature>
+                    <id>40</id>
+                    <title>Weinkeller</title>
+                </feature>
+                <feature>
+                    <id>42</id>
+                    <title>Spielplatz</title>
+                </feature>
+                <feature>
+                    <id>10</id>
+                    <title>Überdachter Parkplatz</title>
+                </feature>
+                <feature>
+                    <id>15</id>
+                    <title>Garage</title>
+                </feature>
+                <feature>
+                    <id>22</id>
+                    <title>WLAN</title>
+                </feature>
+                <feature>
+                    <id>44</id>
+                    <title>Internetanschluss im Zimmer/Apartment</title>
+                </feature>
+                <feature>
+                    <id>52</id>
+                    <title>Tennisanlage</title>
+                </feature>
+                <feature>
+                    <id>19</id>
+                    <title>Fitnessraum</title>
+                </feature>
+                <feature>
+                    <id>9</id>
+                    <title>Freibad</title>
+                </feature>
+                <feature>
+                    <id>1</id>
+                    <title>Beautyfarm</title>
+                </feature>
+                <feature>
+                    <id>60</id>
+                    <title>Kurlizenz (Staatliche Lizenz/Abkommen)</title>
+                </feature>
+                <feature>
+                    <id>62</id>
+                    <title>Natürliche, örtliche Kurmittel</title>
+                </feature>
+                <feature>
+                    <id>23</id>
+                    <title>Shuttle-Dienst</title>
+                </feature>
+                <feature>
+                    <id>11</id>
+                    <title>Ruhig gelegen</title>
+                </feature>
+                <feature>
+                    <id>154</id>
+                    <title>Schwimmbad (Außen-/Innenpool)</title>
+                </feature>
+                <feature>
+                    <id>155</id>
+                    <title>Skishuttle kostenlos</title>
+                </feature>
+                <feature>
+                    <id>156</id>
+                    <title>Barrierefreie Unterkunft</title>
+                </feature>
+                <feature>
+                    <id>157</id>
+                    <title>W-LAN kostenlos</title>
+                </feature>
+                <feature>
+                    <id>158</id>
+                    <title>Saunabenutzung</title>
+                </feature>
+                <feature>
+                    <id>159</id>
+                    <title>1 Flasche Mineralwasser</title>
+                </feature>
+                <feature>
+                    <id>160</id>
+                    <title>Fahrradverleih kostenlos</title>
+                </feature>
+                <feature>
+                    <id>161</id>
+                    <title>Obstteller</title>
+                </feature>
+                <feature>
+                    <id>162</id>
+                    <title>Welcome-Drink</title>
+                </feature>
+                <feature>
+                    <id>163</id>
+                    <title>Parkplatz/Garage</title>
+                </feature>
+                <feature>
+                    <id>164</id>
+                    <title>Kostenlose Kinderbetreuung</title>
+                </feature>
+                <feature>
+                    <id>165</id>
+                    <title>Shuttle-Service (Bahnhof)</title>
+                </feature>
+                <feature>
+                    <id>166</id>
+                    <title>W-LAN</title>
+                </feature>
+            </features_view>
+            <pos>
+                <id_pos>widget</id_pos>
+                <id_pos>hgv_crm</id_pos>
+                <id_pos>sbalance</id_pos>
+                <id_pos>slive</id_pos>
+                <id_pos>src9002</id_pos>
+                <id_pos>598</id_pos>
+                <id_pos>601</id_pos>
+                <id_pos>626</id_pos>
+            </pos>
+            <board_description>
+                <board>
+                    <id>1</id>
+                    <short>Ü</short>
+                    <name>Nur Übernachtung</name>
+                </board>
+                <board>
+                    <id>2</id>
+                    <short>ÜF</short>
+                    <name>Mit Frühstück</name>
+                </board>
+                <board>
+                    <id>3</id>
+                    <default>1</default>
+                    <short>HP</short>
+                    <name>Halbpension</name>
+                </board>
+            </board_description>
+        </hotel>
+    </result>
+    <debug/>
+</root>

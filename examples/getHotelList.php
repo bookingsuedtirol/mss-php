@@ -42,4 +42,4 @@ $res = $client->request(function ($req) {
     ))->getBitmask();
 });
 
-echo json_encode($res["result"]["hotel"][0], JSON_PRETTY_PRINT);
+echo json_encode($res, JSON_PRETTY_PRINT);
