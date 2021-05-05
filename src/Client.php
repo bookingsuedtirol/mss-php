@@ -107,10 +107,12 @@ final class Client
         $response = $this->httpClient->sendRequest($request);
         $resBody = $response->getBody();
 
-        $res = $this->serializer->deserialize($resBody, $type, "xml");
+        $res = $this->serializer
+            ->deserialize($resBody, $type, "xml")
+            ->toArrayWithoutNull();
 
-        $error = $res->header->error;
-        $errorCode = (int) $error->code;
+        $error = $res["header"]["error"];
+        $errorCode = (int) $error["code"];
 
         if ($errorCode > 0) {
             throw new Exception\MssException(
