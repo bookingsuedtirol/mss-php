@@ -6,7 +6,7 @@ namespace MssPhp;
 use MssPhp\Schema\Request;
 use MssPhp\Schema\Response;
 use MssPhp\Exception;
-use MssPhp\Handler;
+use MssPhp\Handler\CustomDateHandler;
 use GuzzleHttp\Psr7;
 use JMS\Serializer\SerializerBuilder;
 use JMS\Serializer\Handler\HandlerRegistry;
@@ -40,7 +40,12 @@ final class Client
     {
         $this->setConfig($config);
         $this->httpClient = $this->createConfiguredClient();
-        $this->serializer = SerializerBuilder::create()->build();
+        $this->serializer = SerializerBuilder::create()
+            ->addDefaultHandlers()
+            ->configureHandlers(function (HandlerRegistry $registry) {
+                CustomDateHandler::register($registry);
+            })
+            ->build();
     }
 
     public function setConfig(array $config)
