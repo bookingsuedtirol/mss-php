@@ -87,6 +87,13 @@ try {
 }
 ```
 
-## Unit tests
+## Development
 
-Run `composer test`
+Run `docker-compose run cli bash`.
+
+If you experience permission issues with some files in this folder,
+change the `USER_ID` and `GROUP_ID` values inside Dockerfile.
+
+## Automated tests
+
+Run `composer test` inside the Docker container.
