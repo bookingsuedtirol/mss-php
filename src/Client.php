@@ -1,13 +1,12 @@
 <?php
 namespace MssPhp;
 
-\Doctrine\Common\Annotations\AnnotationRegistry::registerLoader("class_exists");
-
 use MssPhp\Schema\Request;
 use MssPhp\Schema\Response;
 use MssPhp\Exception;
 use MssPhp\Handler\CustomDateHandler;
 use GuzzleHttp\Psr7;
+use JMS\Serializer\Serializer;
 use JMS\Serializer\SerializerBuilder;
 use JMS\Serializer\Handler\HandlerRegistry;
 use Psr\Http\Client\ClientInterface;
@@ -20,7 +19,7 @@ use Http\Client\Common\Plugin\DecoderPlugin;
 final class Client
 {
     /**
-     * @var JMS\Serializer
+     * @var Serializer
      */
     private $serializer;
 
@@ -48,7 +47,7 @@ final class Client
             ->build();
     }
 
-    public function setConfig(array $config)
+    public function setConfig(array $config): void
     {
         $default = [
             "user" => $_ENV["MSS_USER"],
@@ -85,7 +84,7 @@ final class Client
     /**
      * Makes a request to the MSS Endpoint
      *
-     * @param callback $setup to modify request
+     * @param callable $setup to modify request
      * @param string $type deserialization root class
      *
      * @return array
@@ -137,7 +136,7 @@ final class Client
     /**
      * Creates a new request instance
      *
-     * @return MssPhp\Schema\Request\Root
+     * @return Request\Root
      */
     private function createNewXmlRequest()
     {

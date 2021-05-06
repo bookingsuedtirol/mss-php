@@ -15,7 +15,7 @@ class CustomDateHandler
      * - treat empty strings as null instead of throwing an error
      * - output the formatted string instead of a DateTime object
      */
-    public static function register(HandlerRegistry $registry)
+    public static function register(HandlerRegistry $registry): void
     {
         $registry->registerHandler(
             GraphNavigator::DIRECTION_DESERIALIZATION,
@@ -39,7 +39,7 @@ class CustomDateHandler
                     $type
                 );
 
-                $format = $type["params"][0] ?? DateTime::ATOM;
+                $format = $type["params"][0] ?? \DateTime::ATOM;
 
                 return $dateTime->format($format);
             }
