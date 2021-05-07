@@ -76,9 +76,9 @@ final class Client
         string $xmlString,
         string $type = Response\Root::class
     ) {
-        return $this->serializer
-            ->deserialize($xmlString, $type, "xml")
-            ->toArrayWithoutNull();
+        return $this->normalizeDeserializedResult(
+            $this->serializer->deserialize($xmlString, $type, "xml")
+        );
     }
 
     /**
@@ -151,5 +151,31 @@ final class Client
         $req->header->credentials->source = $this->config["source"];
 
         return $req;
+    }
+
+    /**
+     * Normalize the deserialized object to match the
+     * behaviour of old mss-php with jms/serializer v1
+     *
+     * @return array<array-key, mixed>|scalar
+     */
+    private function normalizeDeserializedResult(object $object)
+    {
+        $noNull = function ($value): bool {
+            return $value !== null;
+        };
+
+        // Recursively convert the current object to a multi-dimensional array
+        $toArray = function ($value) use (&$toArray, &$noNull) {
+            return is_scalar($value)
+                ? $value
+                : array_map(
+                    $toArray,
+                    // Omit properties with null values
+                    array_filter((array) $value, $noNull)
+                );
+        };
+
+        return $toArray($object);
     }
 }

@@ -19,23 +19,4 @@ class Root
      * @Type("MssPhp\Schema\Response\Result")
      */
     public $result;
-
-    /**
-     * Recursively convert the current object to a multi-dimensional array
-     * and omit properties with null values.
-     */
-    public function toArrayWithoutNull()
-    {
-        $noNull = function ($value) {
-            return $value !== null;
-        };
-
-        $toArray = function ($value) use (&$toArray, &$noNull) {
-            return is_scalar($value)
-                ? $value
-                : array_map($toArray, \array_filter((array) $value, $noNull));
-        };
-
-        return $toArray($this);
-    }
 }
