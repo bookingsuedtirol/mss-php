@@ -2,8 +2,10 @@
 
 namespace MssPhp\Schema\Response;
 
+use MssPhp\Utils;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
+use JMS\Serializer\Annotation\PostDeserialize;
 
 class RoomPrice
 {
@@ -47,4 +49,12 @@ class RoomPrice
      * @Type("integer")
      */
     public $payment_term_id;
+
+    /**
+     * @PostDeserialize
+     */
+    public function postDeserialize()
+    {
+        Utils::setEmptyArraysToNull(["price_details"], $this);
+    }
 }

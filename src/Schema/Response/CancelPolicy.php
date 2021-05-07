@@ -2,9 +2,11 @@
 
 namespace MssPhp\Schema\Response;
 
+use MssPhp\Utils;
 use JMS\Serializer\Annotation\AccessType;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
+use JMS\Serializer\Annotation\PostDeserialize;
 
 class CancelPolicy
 {
@@ -49,4 +51,12 @@ class CancelPolicy
      * @Type("string")
      */
     public $priority;
+
+    /**
+     * @PostDeserialize
+     */
+    public function postDeserialize()
+    {
+        Utils::setEmptyArraysToNull(["penalties"], $this);
+    }
 }

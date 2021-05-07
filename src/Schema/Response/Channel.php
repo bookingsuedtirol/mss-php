@@ -2,8 +2,10 @@
 
 namespace MssPhp\Schema\Response;
 
+use MssPhp\Utils;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
+use JMS\Serializer\Annotation\PostDeserialize;
 
 class Channel
 {
@@ -68,4 +70,23 @@ class Channel
      * @Type("MssPhp\Schema\Response\ChannelPriceList")
      */
     public $pricelist;
+
+    /**
+     * @PostDeserialize
+     */
+    public function postDeserialize()
+    {
+        Utils::setEmptyArraysToNull(
+            [
+                "base_price",
+                "cancel_policies",
+                "offer_description",
+                "payment_terms",
+                "room_description",
+                "room_price",
+                "service_price",
+            ],
+            $this
+        );
+    }
 }

@@ -2,8 +2,10 @@
 
 namespace MssPhp\Schema\Response;
 
+use MssPhp\Utils;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
+use JMS\Serializer\Annotation\PostDeserialize;
 
 class Day
 {
@@ -22,4 +24,12 @@ class Day
      * @XmlList(entry = "restriction")
      */
     public $restrictions;
+
+    /**
+     * @PostDeserialize
+     */
+    public function postDeserialize()
+    {
+        Utils::setEmptyArraysToNull(["restrictions"], $this);
+    }
 }

@@ -2,8 +2,10 @@
 
 namespace MssPhp\Schema\Response;
 
+use MssPhp\Utils;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
+use JMS\Serializer\Annotation\PostDeserialize;
 
 class Offer
 {
@@ -63,4 +65,12 @@ class Offer
      * @XmlList(entry = "theme")
      */
     public $themes;
+
+    /**
+     * @PostDeserialize
+     */
+    public function postDeserialize()
+    {
+        Utils::setEmptyArraysToNull(["pictures", "themes"], $this);
+    }
 }

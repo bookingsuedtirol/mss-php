@@ -2,9 +2,11 @@
 
 namespace MssPhp\Schema\Response;
 
+use MssPhp\Utils;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\AccessType;
 use JMS\Serializer\Annotation\XmlList;
+use JMS\Serializer\Annotation\PostDeserialize;
 
 class Hotel
 {
@@ -243,4 +245,15 @@ class Hotel
      * @Type("MssPhp\Schema\Response\CouponService")
      */
     public $coupon;
+
+    /**
+     * @PostDeserialize
+     */
+    public function postDeserialize()
+    {
+        Utils::setEmptyArraysToNull(
+            ["features_view", "logo", "pictures", "gallery", "ratings"],
+            $this
+        );
+    }
 }

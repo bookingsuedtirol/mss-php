@@ -2,8 +2,10 @@
 
 namespace MssPhp\Schema\Response;
 
+use MssPhp\Utils;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
+use JMS\Serializer\Annotation\PostDeserialize;
 
 class Price
 {
@@ -97,4 +99,12 @@ class Price
      * @XmlList(entry = "picture")
      */
     public $pictures;
+
+    /**
+     * @PostDeserialize
+     */
+    public function postDeserialize()
+    {
+        Utils::setEmptyArraysToNull(["pictures"], $this);
+    }
 }

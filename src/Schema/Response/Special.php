@@ -2,8 +2,10 @@
 
 namespace MssPhp\Schema\Response;
 
+use MssPhp\Utils;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
+use JMS\Serializer\Annotation\PostDeserialize;
 
 class Special
 {
@@ -162,4 +164,22 @@ class Special
      * @XmlList(entry = "theme")
      */
     public $themes;
+
+    /**
+     * @PostDeserialize
+     */
+    public function postDeserialize()
+    {
+        Utils::setEmptyArraysToNull(
+            [
+                "hotels",
+                "inclusive",
+                "pictures",
+                "seasons",
+                "services",
+                "themes",
+            ],
+            $this
+        );
+    }
 }
