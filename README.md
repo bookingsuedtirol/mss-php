@@ -45,18 +45,17 @@ use MssPhp\Client;
 use MssPhp\Bitmask\HotelDetails;
 
 $client = new Client([
-    "user" => "username",
-    "password" => "password",
-    "source" => "source"
+  "user" => "username",
+  "password" => "password",
+  "source" => "source",
 ]);
 
-$res = $client->request(function($req) {
-    $req->header->method = "getHotelList";
-    $req->request->search->id = ["11230"];
-    $req->request->options->hotel_details = (new Bitmask(
-        HotelDetails::BASIC_INFO|
-        HotelDetails::COORDINATES
-    ))->getBitmask();
+$res = $client->request(function ($req) {
+  $req->header->method = "getHotelList";
+  $req->request->search->id = ["11230"];
+  $req->request->options->hotel_details = (new Bitmask(
+    HotelDetails::BASIC_INFO | HotelDetails::COORDINATES
+  ))->getBitmask();
 });
 
 $hotel = $res["result"]["hotel"][0];
@@ -77,13 +76,13 @@ use MssPhp\Exception;
 // ...
 
 try {
-    $res = $client->request(function($req) {
+  $res = $client->request(function ($req) {
     // ...
-    });
+  });
 } catch (Exception\MssException $e) {
-    $e->getMessage(); // => string(50) "Invalid value '2016-04-08' for parameter 'arrival'"
-    $e->getCode(); // => int(32)
-    $e->getResponse()->getStatusCode(); // => int(400)
+  $e->getMessage(); // => string(50) "Invalid value '2016-04-08' for parameter 'arrival'"
+  $e->getCode(); // => int(32)
+  $e->getResponse()->getStatusCode(); // => int(400)
 }
 ```
 
