@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 2021-05-11
+
+### Added
+
+- Automated tests with phpunit
+- Compatibility with PHP 8.0
+
+### Fixed
+
+- **BREAKING**: All type annotations which use double/float are now always `float` in the output array instead of `int`.
+
+### Changed
+
+- **BREAKING**: Minimum supported PHP version increased to `7.2`.
+- Update `jms/serializer` to v3
+- Refactor custom date handler
+- Remove the conversion to JSON and transform the deserializer output directly into an array.
+- Update the development Dockerfile to PHP 8.0 and apply and fix the mounted volume permission issues.
+
 ## [2.4.1] - 2021-02-17
 
 ### Fixed
@@ -100,4 +119,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Replace `guzzlehttp/guzzle` with any `PSR-18` compatible http-client.
 - `MssException` inherits from `Http\Client\Exception\HttpException` instead of `GuzzleHttp\Exception\ServerException`.
-- Minimum supported PHP Version increased to `7.1`.
+- Minimum supported PHP version increased to `7.1`.
