@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.1.0] - 2021-05-13
+
+### Added
+
+- Add getHotelList example
+
+### Changed
+
+- Change MSS call URL from https://www.easymailing.eu/mss/mss_service.php to https://www.easychannel.it/mss/mss_service.php
+- Change images domain from www.bookingsuedtirol.com to www.easychannel.it
+
+### Fixed
+
+- Fix test case whitespace
+
 ## [3.0.0] - 2021-05-11
 
 ### Added

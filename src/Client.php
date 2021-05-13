@@ -108,7 +108,7 @@ final class Client
         $request = Psr17FactoryDiscovery::findRequestFactory()
             ->createRequest(
                 "POST",
-                "https://www.easymailing.eu/mss/mss_service.php"
+                "https://www.easychannel.it/mss/mss_service.php"
             )
             ->withBody($stream);
 
