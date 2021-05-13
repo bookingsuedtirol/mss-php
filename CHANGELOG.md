@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.1.1] - 2021-05-13
+
+### Fixed
+
+- Use easychannel.it, not www.easychannel.it
+
 ## [3.1.0] - 2021-05-13
 
 ### Added
