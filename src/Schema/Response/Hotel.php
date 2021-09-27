@@ -231,6 +231,11 @@ class Hotel
     public $child_cnt_max;
 
     /**
+     * @Type("integer")
+     */
+    public $informal_mail;
+
+    /**
      * @Type("array<MssPhp\Schema\Response\Rating>")
      * @XmlList(entry = "rating")
      */
