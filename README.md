@@ -90,7 +90,7 @@ try {
 
 ## Development
 
-Run `docker-compose run cli bash`.
+Run `docker compose run cli bash`.
 
 If you experience permission issues with some files in this folder,
 change the `USER_ID` and `GROUP_ID` values inside Dockerfile.
