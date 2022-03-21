@@ -28,4 +28,9 @@ class SearchAvailability
      * @XmlList(inline = true, entry = "room_id")
      */
     public $room_id;
+
+    /**
+     * @Type("integer")
+     */
+    public $typ;
 }
