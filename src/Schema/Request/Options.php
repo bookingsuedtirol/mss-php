@@ -69,6 +69,11 @@ class Options
     /**
      * @Type("integer")
      */
+    public $check_restrictions;
+
+    /**
+     * @Type("integer")
+     */
     public $pricelist_details;
 
     /**
