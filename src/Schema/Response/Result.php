@@ -46,12 +46,6 @@ class Result
     public $source;
 
     /**
-     * @Type("array<MssPhp\Schema\Response\SeoText>")
-     * @XmlList(inline = true, entry = "seo_text")
-     */
-    public $seo_text;
-
-    /**
      * @Type("array<MssPhp\Schema\Response\Location>")
      * @XmlList(inline = true, entry = "location")
      */

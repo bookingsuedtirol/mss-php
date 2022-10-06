@@ -33,7 +33,6 @@ composer require hgv/mss-php kriswallsmith/buzz nyholm/psr7
 - [x] getLocationList
 - [x] getMasterpackagesList
 - [x] getThemeList
-- [x] getSeoTexts
 - [x] validateCoupon
 
 ## Example

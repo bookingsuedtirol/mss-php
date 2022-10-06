@@ -110,11 +110,6 @@ class Search
     public $typ;
 
     /**
-     * @Type("string")
-     */
-    public $seo_typ;
-
-    /**
      * @Type("integer")
      */
     public $location_details;
