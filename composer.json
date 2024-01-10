@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^7.2|^8.0",
+        "php": "^8.0",
         "jms/serializer": "^3.12",
         "psr/http-client": "^1.0",
         "php-http/client-common": "^2.1",
@@ -40,6 +40,11 @@
         "vlucas/phpdotenv": "^5.1",
         "nyholm/psr7": "^1.0",
         "kriswallsmith/buzz": "^1.1",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^10.5.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }

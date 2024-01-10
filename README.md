@@ -7,7 +7,7 @@ Only supports MSS 2.0!
 
 ## Installation
 
-PHP version requirement: 7.2 or greater.
+PHP version requirement: 8.1 or greater.
 
 The MSS API Client is not hard coupled to Guzzle, Buzz or any other library that sends
 HTTP messages. Instead, it uses the [PSR-18](https://www.php-fig.org/psr/psr-18/) client abstraction.
