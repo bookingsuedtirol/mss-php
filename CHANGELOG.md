@@ -7,9 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.1] - 2024-01-10
+
+### Fixed
+
+- Fix changelog heading level
+- Adjust PHP version requirement in composer.json
+
 ## [5.0.0] - 2024-01-10
 
-## Changed
+### Changed
 
 - Drop support for PHP < 8.1
 - Update dependencies
