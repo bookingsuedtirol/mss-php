@@ -1,6 +1,6 @@
 # mss-php
 
-[![Packagist Version (including pre-releases)](https://img.shields.io/packagist/v/hgv/mss-php.svg?include_prereleases&style=flat-square)](https://packagist.org/packages/hgv/mss-php)
+[![Packagist Version (including pre-releases)](https://img.shields.io/packagist/v/bookingsuedtirol/mss-php.svg?include_prereleases&style=flat-square)](https://packagist.org/packages/bookingsuedtirol/mss-php)
 
 MSS API Client for PHP projects.
 Only supports MSS 2.0!
@@ -16,7 +16,7 @@ This will give you the flexibility to choose what
 you want to use.
 
 ```bash
-composer require hgv/mss-php kriswallsmith/buzz nyholm/psr7
+composer require bookingsuedtirol/mss-php kriswallsmith/buzz nyholm/psr7
 ```
 
 ## Available methods

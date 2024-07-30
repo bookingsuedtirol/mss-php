@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.0.0] - 2024-07-30
+
+## Changed
+
+- Move package to `bookingsuedtirol` namespace
+
 ## [5.0.1] - 2024-01-10
 
 ### Fixed
@@ -124,7 +130,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Fix a bug where `MssException` returned 2xx status codes in the `Response` object.
-- Fix a bug where `MssException@getCode()` returned the HTTP status code instead of the [Mss Error Code](https://github.com/HGV/mss-php/blob/992225d2ccbaa144464a80572075c29f3d7a470d/src/Bitmask/ErrorCodes.php).
+- Fix a bug where `MssException@getCode()` returned the HTTP status code instead of the [Mss Error Code](https://github.com/bookingsuedtirol/mss-php/blob/992225d2ccbaa144464a80572075c29f3d7a470d/src/Bitmask/ErrorCodes.php).
 
 ## [2.1.1] - 2021-01-19
 
@@ -158,7 +164,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Backport every [v1.x](https://github.com/HGV/mss-php/tree/v1.x) feature update, including the following methods:
+- Backport every [v1.x](https://github.com/bookingsuedtirol/mss-php/tree/v1.x) feature update, including the following methods:
   - `getMasterpackagesList`
   - `getThemeList`
   - `validateCoupon`

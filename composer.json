@@ -1,8 +1,8 @@
 {
-    "name": "hgv/mss-php",
+    "name": "bookingsuedtirol/mss-php",
     "type": "library",
     "description": "MSS API Client for PHP projects",
-    "homepage" : "https://github.com/HGV/mss-php",
+    "homepage" : "https://github.com/bookingsuedtirol/mss-php",
     "keywords": ["mss","api","client"],
     "license": "MIT",
     "authors": [
