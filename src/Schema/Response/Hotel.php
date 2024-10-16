@@ -42,6 +42,11 @@ class Hotel
     }
 
     /**
+     * @Type("string")
+     */
+    public $cin;
+
+    /**
      * @Type("integer")
      */
     public $type;
