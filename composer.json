@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=8.1",
-        "jms/serializer": "3.29",
+        "jms/serializer": "3.29.1",
         "psr/http-client": "^1.0.3",
         "php-http/client-common": "^2.7.2",
         "php-http/discovery": "^1.20"
