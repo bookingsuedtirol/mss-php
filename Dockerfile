@@ -1,4 +1,4 @@
-FROM php:8.3-cli
+FROM php:8.4-cli
 
 # Fill in the correct values if you experience permission issues.
 # Run `id -u` and `id -g` on your system to get them.

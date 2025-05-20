@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update `docker run …` command in README.md
+- Use PHP 8.4 in the development container
 
 ## [6.3.0] - 2024-10-28
 
