@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.5.1] - 2026-04-15
+
+### Fixed
+
+- Convert remaining docblock annotations to PHP 8 attributes
+
 ## [6.5.0] - 2026-04-15
 
 ### Changed
