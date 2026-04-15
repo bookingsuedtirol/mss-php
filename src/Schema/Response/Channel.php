@@ -9,71 +9,47 @@ use JMS\Serializer\Annotation\PostDeserialize;
 
 class Channel
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $channel_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_id;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Offer>")
-     * @XmlList(entry = "offer")
-     */
+    #[Type("array<MssPhp\Schema\Response\Offer>")]
+    #[XmlList(entry: "offer")]
     public $offer_description;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\RoomPrice>")
-     * @XmlList(entry = "price")
-     */
+    #[Type("array<MssPhp\Schema\Response\RoomPrice>")]
+    #[XmlList(entry: "price")]
     public $room_price;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Room>")
-     * @XmlList(entry = "room")
-     */
+    #[Type("array<MssPhp\Schema\Response\Room>")]
+    #[XmlList(entry: "room")]
     public $room_description;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Price>")
-     * @XmlList(entry = "price")
-     */
+    #[Type("array<MssPhp\Schema\Response\Price>")]
+    #[XmlList(entry: "price")]
     public $service_price;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $from_price;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\RoomPrice>")
-     * @XmlList(entry = "price")
-     */
+    #[Type("array<MssPhp\Schema\Response\RoomPrice>")]
+    #[XmlList(entry: "price")]
     public $base_price;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\CancelPolicy>")
-     * @XmlList(entry = "cancel_policy")
-     */
+    #[Type("array<MssPhp\Schema\Response\CancelPolicy>")]
+    #[XmlList(entry: "cancel_policy")]
     public $cancel_policies;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\PaymentTerm>")
-     * @XmlList(entry = "payment_term")
-     */
+    #[Type("array<MssPhp\Schema\Response\PaymentTerm>")]
+    #[XmlList(entry: "payment_term")]
     public $payment_terms;
 
-    /**
-     * @Type("MssPhp\Schema\Response\ChannelPriceList")
-     */
+    #[Type("MssPhp\Schema\Response\ChannelPriceList")]
     public $pricelist;
 
-    /**
-     * @PostDeserialize
-     */
+    #[PostDeserialize]
     public function postDeserialize()
     {
         Utils::setEmptyArraysToNull(

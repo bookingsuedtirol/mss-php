@@ -6,28 +6,18 @@ use JMS\Serializer\Annotation\Type;
 
 class Rating
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $id;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $provider;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $value;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $count;
 
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     */
+    #[Type("DateTime<'Y-m-d'>")]
     public $date;
 }

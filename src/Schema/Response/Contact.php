@@ -7,10 +7,8 @@ use JMS\Serializer\Annotation\AccessType;
 
 class Contact
 {
-    /**
-     * @Type("string")
-     * @AccessType("public_method")
-     */
+    #[Type("string")]
+    #[AccessType(type: "public_method")]
     public $email;
 
     public function getEmail()
@@ -23,18 +21,12 @@ class Contact
         $this->email = trim($email);
     }
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $phone;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $fax;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $web;
 }

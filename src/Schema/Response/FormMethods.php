@@ -6,8 +6,6 @@ use JMS\Serializer\Annotation\Type;
 
 class FormMethods
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $method;
 }

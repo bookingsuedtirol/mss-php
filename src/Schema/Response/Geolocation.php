@@ -6,23 +6,15 @@ use JMS\Serializer\Annotation\Type;
 
 class Geolocation
 {
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $latitude;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $longitude;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $altitude;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $distance;
 }

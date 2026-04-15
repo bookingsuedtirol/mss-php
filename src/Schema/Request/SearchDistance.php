@@ -6,18 +6,12 @@ use JMS\Serializer\Annotation\Type;
 
 class SearchDistance
 {
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $latitude;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $longitude;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $radius;
 }

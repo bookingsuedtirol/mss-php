@@ -9,100 +9,62 @@ use JMS\Serializer\Annotation\PostDeserialize;
 
 class Price
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $price_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $price_typ;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $price_title;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $description;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $price_description;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $supplement;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $price_supplement;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $price_ws;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $price_bb;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $price_hb;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $price_fb;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $price_ai;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $price_amount;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $price_value;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $price_total;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $unit;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Picture>")
-     * @XmlList(entry = "picture")
-     */
+    #[Type("array<MssPhp\Schema\Response\Picture>")]
+    #[XmlList(entry: "picture")]
     public $pictures;
 
-    /**
-     * @PostDeserialize
-     */
+    #[PostDeserialize]
     public function postDeserialize()
     {
         Utils::setEmptyArraysToNull(["pictures"], $this);

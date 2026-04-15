@@ -7,94 +7,58 @@ use JMS\Serializer\Annotation\XmlList;
 
 class PriceList
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_typ;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_base_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $special_typ;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $prl_mode;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $prl_unit;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $days_arrival;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $days_departure;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $days_dur_min;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $days_dur_max;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $days_arrival_min;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $days_arrival_max;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $children_min;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $children_max;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $adults_min;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $adults_max;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Season>")
-     * @XmlList(inline = true, entry = "season")
-     */
+    #[Type("array<MssPhp\Schema\Response\Season>")]
+    #[XmlList(inline: true, entry: "season")]
     public $season;
 }

@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class Rateplan
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $code;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $source;
 }

@@ -9,66 +9,42 @@ use JMS\Serializer\Annotation\PostDeserialize;
 
 class Offer
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_gid;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_base_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_typ;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_show;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $offer_title;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $offer_description;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $description;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Picture>")
-     * @XmlList(entry = "picture")
-     */
+    #[Type("array<MssPhp\Schema\Response\Picture>")]
+    #[XmlList(entry: "picture")]
     public $pictures;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Theme>")
-     * @XmlList(entry = "theme")
-     */
+    #[Type("array<MssPhp\Schema\Response\Theme>")]
+    #[XmlList(entry: "theme")]
     public $themes;
 
-    /**
-     * @PostDeserialize
-     */
+    #[PostDeserialize]
     public function postDeserialize()
     {
         Utils::setEmptyArraysToNull(["pictures", "themes"], $this);

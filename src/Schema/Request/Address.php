@@ -6,23 +6,15 @@ use JMS\Serializer\Annotation\Type;
 
 class Address
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $street;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $zipcode;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $city;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $country;
 }

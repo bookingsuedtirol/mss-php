@@ -9,50 +9,32 @@ use JMS\Serializer\Annotation\PostDeserialize;
 
 class RoomPrice
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $room_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $room_seq;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_id;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Price>")
-     * @XmlList(entry = "price")
-     */
+    #[Type("array<MssPhp\Schema\Response\Price>")]
+    #[XmlList(entry: "price")]
     public $price_details;
 
-    /**
-     * @Type("MssPhp\Schema\Response\Price")
-     */
+    #[Type("MssPhp\Schema\Response\Price")]
     public $price_total;
 
-    /**
-     * @Type("MssPhp\Schema\Response\Price")
-     */
+    #[Type("MssPhp\Schema\Response\Price")]
     public $price_inclusive;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $cancel_policy_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $payment_term_id;
 
-    /**
-     * @PostDeserialize
-     */
+    #[PostDeserialize]
     public function postDeserialize()
     {
         Utils::setEmptyArraysToNull(["price_details"], $this);

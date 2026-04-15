@@ -9,25 +9,17 @@ use JMS\Serializer\Annotation\PostDeserialize;
 
 class Day
 {
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     */
+    #[Type("DateTime<'Y-m-d'>")]
     public $date;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $free;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Restriction>")
-     * @XmlList(entry = "restriction")
-     */
+    #[Type("array<MssPhp\Schema\Response\Restriction>")]
+    #[XmlList(entry: "restriction")]
     public $restrictions;
 
-    /**
-     * @PostDeserialize
-     */
+    #[PostDeserialize]
     public function postDeserialize()
     {
         Utils::setEmptyArraysToNull(["restrictions"], $this);

@@ -6,28 +6,18 @@ use JMS\Serializer\Annotation\Type;
 
 class Tracking
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $partner;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $media;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $campain;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $campaign;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $companyinfo;
 }

@@ -7,34 +7,22 @@ use JMS\Serializer\Annotation\XmlList;
 
 class SearchHotel
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name;
 
-    /**
-     * @Type("array<integer>")
-     * @XmlList(inline = true, entry = "type")
-     */
+    #[Type("array<integer>")]
+    #[XmlList(inline: true, entry: "type")]
     public $type;
 
-    /**
-     * @Type("MssPhp\Schema\Request\Stars")
-     */
+    #[Type("MssPhp\Schema\Request\Stars")]
     public $stars;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $feature;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $theme;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $room_type;
 }

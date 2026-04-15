@@ -6,18 +6,12 @@ use JMS\Serializer\Annotation\Type;
 
 class Credentials
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $user;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $password;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $source;
 }

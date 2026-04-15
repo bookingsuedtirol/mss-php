@@ -7,34 +7,22 @@ use JMS\Serializer\Annotation\XmlList;
 
 class Validity
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $valid;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offers;
 
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     */
+    #[Type("DateTime<'Y-m-d'>")]
     public $arrival;
 
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     */
+    #[Type("DateTime<'Y-m-d'>")]
     public $departure;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $service;
 
-    /**
-     * @Type("array<MssPhp\Schema\Request\Room>")
-     * @XmlList(inline = true, entry = "room")
-     */
+    #[Type("array<MssPhp\Schema\Request\Room>")]
+    #[XmlList(inline: true, entry: "room")]
     public $room;
 }

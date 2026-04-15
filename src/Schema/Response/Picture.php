@@ -8,39 +8,25 @@ use JMS\Serializer\Annotation\PostDeserialize;
 
 class Picture
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $url;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $time;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $copyright;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $width;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $height;
 
-    /**
-     * @PostDeserialize
-     */
+    #[PostDeserialize]
     public function postDeserialize()
     {
         $this->url = str_replace(

@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class Payment
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $method;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $invoice;
 }

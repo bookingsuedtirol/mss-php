@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class CheckInOut
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $from;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $to;
 }

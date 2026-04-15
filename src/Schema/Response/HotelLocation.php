@@ -6,23 +6,15 @@ use JMS\Serializer\Annotation\Type;
 
 class HotelLocation
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id_city;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id_community;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id_region;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id_area;
 }

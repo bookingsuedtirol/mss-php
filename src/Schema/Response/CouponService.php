@@ -6,8 +6,6 @@ use JMS\Serializer\Annotation\Type;
 
 class CouponService
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $provider;
 }

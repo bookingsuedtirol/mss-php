@@ -6,43 +6,27 @@ use JMS\Serializer\Annotation\Type;
 
 class Guest
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $gender;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $prefix;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $firstname;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $lastname;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $email;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $phone;
 
-    /**
-     * @Type("MssPhp\Schema\Request\Address")
-     */
+    #[Type("MssPhp\Schema\Request\Address")]
     public $address;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $newsletter;
 }

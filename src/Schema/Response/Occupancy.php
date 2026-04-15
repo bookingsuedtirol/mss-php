@@ -6,23 +6,15 @@ use JMS\Serializer\Annotation\Type;
 
 class Occupancy
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $min;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $max;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $std;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $mfp;
 }

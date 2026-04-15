@@ -7,14 +7,10 @@ use JMS\Serializer\Annotation\XmlList;
 
 class Details
 {
-    /**
-     * @Type("array<MssPhp\Schema\Request\ExtraPrice>")
-     * @XmlList(inline = true, entry = "extra_price")
-     */
+    #[Type("array<MssPhp\Schema\Request\ExtraPrice>")]
+    #[XmlList(inline: true, entry: "extra_price")]
     public $extra_price;
 
-    /**
-     * @Type("MssPhp\Schema\Request\Coupon")
-     */
+    #[Type("MssPhp\Schema\Request\Coupon")]
     public $coupon;
 }

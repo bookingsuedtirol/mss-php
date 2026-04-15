@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class Coupon
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $coupon_code;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $coupon_type;
 }

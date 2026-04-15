@@ -6,8 +6,6 @@ use JMS\Serializer\Annotation\Type;
 
 class Tracking
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $pixel;
 }

@@ -6,88 +6,54 @@ use JMS\Serializer\Annotation\Type;
 
 class Restriction
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $obj_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $obj_sub_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $obj_sub_only;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $service;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $arrival;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $departure;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $min;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $min_arrival;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $max;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $max_arrival;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $close;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $children_min;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $children_max;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $holes;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $days_arrival_min;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $days_arrival_max;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $pers_age_min;
 }

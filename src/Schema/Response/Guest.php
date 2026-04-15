@@ -7,35 +7,23 @@ use JMS\Serializer\Annotation\AccessType;
 
 class Guest
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $guest_id;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $firstname;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $lastname;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $prefix;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $gender;
 
-    /**
-     * @Type("string")
-     * @AccessType("public_method")
-     */
+    #[Type("string")]
+    #[AccessType(type: "public_method")]
     public $email;
 
     public function getEmail()
@@ -48,13 +36,9 @@ class Guest
         $this->email = trim($email);
     }
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $phone;
 
-    /**
-     * @Type("MssPhp\Schema\Response\Address")
-     */
+    #[Type("MssPhp\Schema\Response\Address")]
     public $address;
 }

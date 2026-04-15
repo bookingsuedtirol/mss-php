@@ -6,8 +6,6 @@ use JMS\Serializer\Annotation\Type;
 
 class Logging
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $step;
 }

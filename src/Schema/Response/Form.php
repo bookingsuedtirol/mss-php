@@ -9,31 +9,21 @@ use JMS\Serializer\Annotation\PostDeserialize;
 
 class Form
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $form_url;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $form_iframe;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\FormMethods>")
-     * @XmlList(inline = true, entry = "form_methods")
-     */
+    #[Type("array<MssPhp\Schema\Response\FormMethods>")]
+    #[XmlList(inline: true, entry: "form_methods")]
     public $form_methods;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Field>")
-     * @XmlList(entry = "field")
-     */
+    #[Type("array<MssPhp\Schema\Response\Field>")]
+    #[XmlList(entry: "field")]
     public $form_fields;
 
-    /**
-     * @PostDeserialize
-     */
+    #[PostDeserialize]
     public function postDeserialize()
     {
         Utils::setEmptyArraysToNull(["form_fields"], $this);

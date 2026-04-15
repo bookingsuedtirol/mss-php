@@ -6,78 +6,48 @@ use JMS\Serializer\Annotation\Type;
 
 class Location
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $root_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $parent_id;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $virtual_id;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $typ;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $visible;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $latitude;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $longitude;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_deu;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_ita;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_spa;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_fra;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_rus;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_dan;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_eng;
 }

@@ -6,23 +6,15 @@ use JMS\Serializer\Annotation\Type;
 
 class Company
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $taxnumber;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $recipient_code;
 
-    /**
-     * @Type("MssPhp\Schema\Response\Address")
-     */
+    #[Type("MssPhp\Schema\Response\Address")]
     public $address;
 }

@@ -6,78 +6,48 @@ use JMS\Serializer\Annotation\Type;
 
 class Options
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $hotel_details;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_details;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $room_details;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $special_details;
 
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     */
+    #[Type("DateTime<'Y-m-d'>")]
     public $picture_date;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $lts_bookable;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $get_availability;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $get_restrictions;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $get_roomdetails;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $get_masterpackages;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $base_price;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $check_restrictions;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $pricelist_details;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $only_subscribed_hotels;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $only_available;
 }

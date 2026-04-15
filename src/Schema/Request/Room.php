@@ -7,34 +7,22 @@ use JMS\Serializer\Annotation\XmlList;
 
 class Room
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $room_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $service;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $room_type;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $room_seq;
 
-    /**
-     * @Type("array<integer>")
-     * @XmlList(inline = true, entry = "person")
-     */
+    #[Type("array<integer>")]
+    #[XmlList(inline: true, entry: "person")]
     public $person;
 }

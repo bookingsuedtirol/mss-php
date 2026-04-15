@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class Order
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $field;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $dir;
 }

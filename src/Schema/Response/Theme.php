@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class Theme
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title;
 }

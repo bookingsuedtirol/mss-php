@@ -6,8 +6,6 @@ use JMS\Serializer\Annotation\Type;
 
 class HotelPayment
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $methods;
 }

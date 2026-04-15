@@ -6,53 +6,33 @@ use JMS\Serializer\Annotation\Type;
 
 class Properties
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $area;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $bed_rooms;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $living_rooms;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $dining_rooms;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $bath_rooms;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $wc_rooms;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $min;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $max;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $std;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $mfp;
 }

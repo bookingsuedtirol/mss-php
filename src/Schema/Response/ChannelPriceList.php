@@ -9,20 +9,14 @@ use JMS\Serializer\Annotation\PostDeserialize;
 
 class ChannelPriceList
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $offer_id;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Price>")
-     * @XmlList(entry = "price")
-     */
+    #[Type("array<MssPhp\Schema\Response\Price>")]
+    #[XmlList(entry: "price")]
     public $inclusive;
 
-    /**
-     * @PostDeserialize
-     */
+    #[PostDeserialize]
     public function postDeserialize()
     {
         Utils::setEmptyArraysToNull(["inclusive"], $this);

@@ -6,28 +6,18 @@ use JMS\Serializer\Annotation\Type;
 
 class Header
 {
-    /**
-     * @Type("MssPhp\Schema\Response\Error")
-     */
+    #[Type("MssPhp\Schema\Response\Error")]
     public $error;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $result_id;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $source;
 
-    /**
-     * @Type("MssPhp\Schema\Response\Paging")
-     */
+    #[Type("MssPhp\Schema\Response\Paging")]
     public $paging;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $time;
 }

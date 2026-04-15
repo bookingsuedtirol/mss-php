@@ -6,18 +6,12 @@ use JMS\Serializer\Annotation\Type;
 
 class Insurance
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $insurance_type;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $insurance_url;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $agency_nr;
 }

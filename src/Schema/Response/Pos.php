@@ -7,9 +7,7 @@ use JMS\Serializer\Annotation\XmlList;
 
 class Pos
 {
-    /**
-     * @Type("array<string>")
-     * @XmlList(inline = true, entry = "id_pos")
-     */
+    #[Type("array<string>")]
+    #[XmlList(inline: true, entry: "id_pos")]
     public $id_pos;
 }

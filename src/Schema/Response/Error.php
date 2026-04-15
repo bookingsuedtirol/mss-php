@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class Error
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $code;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $message;
 }

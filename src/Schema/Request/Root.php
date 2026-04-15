@@ -5,23 +5,15 @@ namespace MssPhp\Schema\Request;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlRoot;
 
-/**
- * @XmlRoot("root")
- */
+#[XmlRoot("root")]
 class Root
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $version = "2.0";
 
-    /**
-     * @Type("MssPhp\Schema\Request\Header")
-     */
+    #[Type("MssPhp\Schema\Request\Header")]
     public $header;
 
-    /**
-     * @Type("MssPhp\Schema\Request\Request")
-     */
+    #[Type("MssPhp\Schema\Request\Request")]
     public $request;
 }

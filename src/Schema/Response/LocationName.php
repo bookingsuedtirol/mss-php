@@ -6,23 +6,15 @@ use JMS\Serializer\Annotation\Type;
 
 class LocationName
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_city;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_community;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_region;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name_area;
 }

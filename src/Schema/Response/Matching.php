@@ -6,23 +6,15 @@ use JMS\Serializer\Annotation\Type;
 
 class Matching
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id_bok;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id_exp;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id_htl;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id_hrs;
 }

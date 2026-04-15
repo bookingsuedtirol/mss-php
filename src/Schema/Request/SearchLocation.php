@@ -7,15 +7,11 @@ use JMS\Serializer\Annotation\XmlList;
 
 class SearchLocation
 {
-    /**
-     * @Type("array<integer>")
-     * @XmlList(inline = true, entry = "location")
-     */
+    #[Type("array<integer>")]
+    #[XmlList(inline: true, entry: "location")]
     public $location;
 
-    /**
-     * @Type("array<string>")
-     * @XmlList(inline = true, entry = "location_lts")
-     */
+    #[Type("array<string>")]
+    #[XmlList(inline: true, entry: "location_lts")]
     public $location_lts;
 }

@@ -6,18 +6,12 @@ use JMS\Serializer\Annotation\Type;
 
 class SourceData
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $description;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $headline;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $url;
 }

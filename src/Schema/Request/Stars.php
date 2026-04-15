@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class Stars
 {
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $min;
 
-    /**
-     * @Type("double")
-     */
+    #[Type("double")]
     public $max;
 }

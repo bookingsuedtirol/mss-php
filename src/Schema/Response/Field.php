@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class Field
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $value;
 }

@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class Form
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $url_success;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $url_failure;
 }

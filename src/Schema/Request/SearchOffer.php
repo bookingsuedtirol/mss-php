@@ -7,45 +7,29 @@ use JMS\Serializer\Annotation\XmlList;
 
 class SearchOffer
 {
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     */
+    #[Type("DateTime<'Y-m-d'>")]
     public $arrival;
 
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     */
+    #[Type("DateTime<'Y-m-d'>")]
     public $departure;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $service;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $feature;
 
-    /**
-     * @Type("array<string>")
-     * @XmlList(inline = true, entry = "channel_id")
-     */
+    #[Type("array<string>")]
+    #[XmlList(inline: true, entry: "channel_id")]
     public $channel_id;
 
-    /**
-     * @Type("array<MssPhp\Schema\Request\Room>")
-     * @XmlList(inline = true, entry = "room")
-     */
+    #[Type("array<MssPhp\Schema\Request\Room>")]
+    #[XmlList(inline: true, entry: "room")]
     public $room;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $typ;
 
-    /**
-     * @Type("MssPhp\Schema\Request\Rateplan")
-     */
+    #[Type("MssPhp\Schema\Request\Rateplan")]
     public $rateplan;
 }

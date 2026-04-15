@@ -6,48 +6,30 @@ use JMS\Serializer\Annotation\Type;
 
 class PaymentTerm
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $owner_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $methods;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $ccards;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $prepayment;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $priority;
 
-    /**
-     * @Type("MssPhp\Schema\Response\Bank")
-     */
+    #[Type("MssPhp\Schema\Response\Bank")]
     public $bank;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $description;
 
-    /**
-     * @Type("MssPhp\Schema\Response\Insurance")
-     */
+    #[Type("MssPhp\Schema\Response\Insurance")]
     public $insurance;
 }

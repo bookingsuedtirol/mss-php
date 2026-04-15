@@ -6,18 +6,12 @@ use JMS\Serializer\Annotation\Type;
 
 class Bank
 {
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $name;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $iban;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $swift;
 }

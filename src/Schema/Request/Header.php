@@ -6,23 +6,15 @@ use JMS\Serializer\Annotation\Type;
 
 class Header
 {
-    /**
-     * @Type("MssPhp\Schema\Request\Credentials")
-     */
+    #[Type("MssPhp\Schema\Request\Credentials")]
     public $credentials;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $method = "getHotelList";
 
-    /**
-     * @Type("MssPhp\Schema\Request\Paging")
-     */
+    #[Type("MssPhp\Schema\Request\Paging")]
     public $paging;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $result_id;
 }

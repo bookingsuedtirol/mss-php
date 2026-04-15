@@ -6,13 +6,9 @@ use JMS\Serializer\Annotation\Type;
 
 class Paging
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $start = 0;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $limit = 0;
 }

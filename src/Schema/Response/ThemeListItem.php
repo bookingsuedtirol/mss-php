@@ -6,58 +6,36 @@ use JMS\Serializer\Annotation\Type;
 
 class ThemeListItem
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $filter_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $virtual_id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $sequence;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title_deu;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title_ita;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title_eng;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title_spa;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title_fra;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title_rus;
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $title_dan;
 }

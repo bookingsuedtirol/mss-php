@@ -10,25 +10,17 @@ use JMS\Serializer\Annotation\PostDeserialize;
 
 class CancelPolicy
 {
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $id;
 
-    /**
-     * @Type("integer")
-     */
+    #[Type("integer")]
     public $refundable;
 
-    /**
-     * @Type("DateTime<'Y-m-d H:i:s'>")
-     */
+    #[Type("DateTime<'Y-m-d H:i:s'>")]
     public $refundable_until;
 
-    /**
-     * @Type("array<MssPhp\Schema\Response\Penalty>")
-     * @XmlList(entry = "penalty")
-     */
+    #[Type("array<MssPhp\Schema\Response\Penalty>")]
+    #[XmlList(entry: "penalty")]
     public $penalties;
 
     /**
@@ -47,14 +39,10 @@ class CancelPolicy
         $this->description = nl2br(trim($description));
     }
 
-    /**
-     * @Type("string")
-     */
+    #[Type("string")]
     public $priority;
 
-    /**
-     * @PostDeserialize
-     */
+    #[PostDeserialize]
     public function postDeserialize()
     {
         Utils::setEmptyArraysToNull(["penalties"], $this);
