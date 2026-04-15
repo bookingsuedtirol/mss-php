@@ -37,10 +37,8 @@ class Room
     #[Type("string")]
     public $title;
 
-    /**
-     * @AccessType("public_method")
-     * @Type("string")
-     */
+    #[Type("string")]
+    #[AccessType(type: "public_method")]
     public $description;
 
     public function getDescription()

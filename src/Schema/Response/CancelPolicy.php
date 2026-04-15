@@ -23,10 +23,8 @@ class CancelPolicy
     #[XmlList(entry: "penalty")]
     public $penalties;
 
-    /**
-     * @AccessType("public_method")
-     * @Type("string")
-     */
+    #[Type("string")]
+    #[AccessType(type: "public_method")]
     public $description;
 
     public function getDescription()
